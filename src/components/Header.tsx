@@ -5,7 +5,7 @@ export default function Header() {
   const { lang, toggleLang, t } = useLang();
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-[#E63946] text-white border-b border-white/10 shadow-sm shadow-slate-900/10">
+    <header className="sticky top-0 z-50 w-full bg-[#FF0000] text-white border-b border-white/10 shadow-sm shadow-slate-900/10">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2">
@@ -46,7 +46,7 @@ export default function Header() {
             href={ctaLinks.order}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden sm:inline-flex items-center rounded-full bg-white px-5 py-2 text-sm font-bold text-[#E63946] shadow-md shadow-slate-900/20 transition-all hover:bg-slate-100"
+            className="hidden sm:inline-flex items-center rounded-full bg-white px-5 py-2 text-sm font-bold text-[#FF0000] shadow-md shadow-slate-900/20 transition-all hover:bg-slate-100"
           >
             {t.headerCta}
           </a>
