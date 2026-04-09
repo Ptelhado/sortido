@@ -7,7 +7,7 @@ export type Lang = "pt" | "en";
 // --- CTA Links (editable) ---
 export const ctaLinks = {
   order: "https://sortido.pt/order",
-  uberEats: "https://www.ubereats.com/store/sortido",
+  uberEats: "https://www.ubereats.com/pt-en/store/sortido-lisboa/dVKCqH2PUaqlcIaGdgbmxA?srsltid=AfmBOor-W3wTMUB9NiAxeQ5xW8g5WFShgXV5fb9f0sZT6UMu2gdE94ut",
   glovo: "https://glovoapp.com/pt/pt/sortido",
 };
 
