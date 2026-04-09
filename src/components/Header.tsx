@@ -6,13 +6,13 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-[#FF0000] text-white border-b border-white/10 shadow-sm shadow-slate-900/10">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-1 sm:px-6">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-0 sm:px-6">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2">
           <img
             src="/sortido_logo.svg"
             alt="Sortido logo"
-            className="h-24 w-auto"
+            className="h-28 w-auto"
           />
         </a>
 
