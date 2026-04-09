@@ -1,55 +1,62 @@
-import { useLang } from "@/context/LanguageContext";
-import { ctaLinks } from "@/data/content";
+﻿import { useLang } from "@/context/LanguageContext";
+import { ctaLinks, heroImage } from "@/data/content";
 
-export default function Header() {
-  const { lang, toggleLang, t } = useLang();
+export default function Hero() {
+  const { t } = useLang();
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
-        {/* Logo */}
-        <a href="#" className="flex items-center gap-2">
-          <span className="text-2xl font-extrabold tracking-tight text-[#E63946]">
-            Sortido
+    <section id="hero" className="relative overflow-hidden bg-[#0A1628]">
+      <div className="absolute inset-0">
+        <img
+          src={heroImage}
+          alt="Sortido hero background"
+          className="h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-slate-950/70" />
+      </div>
+
+      <div className="relative mx-auto max-w-6xl px-4 py-24 sm:px-6 lg:px-8">
+        <div className="mx-auto flex min-h-[calc(100vh-80px)] max-w-4xl flex-col justify-center gap-6 text-left">
+          <span className="inline-flex items-center rounded-full border border-slate-200/20 bg-slate-900/70 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.35em] text-slate-200">
+            PREMIUM CONVENIENCE
           </span>
-        </a>
 
-        {/* Right side: lang toggle + CTA */}
-        <div className="flex items-center gap-3">
-          {/* Language Toggle */}
-          <button
-            onClick={toggleLang}
-            className="flex items-center gap-1 rounded-full border border-gray-200 bg-gray-50 px-3 py-1.5 text-sm font-semibold text-gray-700 transition-colors hover:bg-gray-100"
-            aria-label="Toggle language"
-          >
-            <span
-              className={
-                lang === "pt" ? "text-[#E63946] font-bold" : "text-gray-400"
-              }
-            >
-              PT
-            </span>
-            <span className="text-gray-300">/</span>
-            <span
-              className={
-                lang === "en" ? "text-[#E63946] font-bold" : "text-gray-400"
-              }
-            >
-              EN
-            </span>
-          </button>
+          <h1 className="text-4xl font-black tracking-tight text-white sm:text-5xl lg:text-6xl whitespace-pre-line">
+            {t.heroHeadline}
+          </h1>
 
-          {/* Compact CTA */}
-          <a
-            href={ctaLinks.order}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden sm:inline-flex items-center rounded-full bg-[#E63946] px-5 py-2 text-sm font-bold text-white shadow-md transition-all hover:bg-[#d32f3b] hover:shadow-lg"
-          >
-            {t.headerCta}
-          </a>
+          <p className="max-w-2xl text-lg leading-8 text-slate-200/80">
+            {t.heroSubtitle}
+          </p>
+
+          <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <a
+              href={ctaLinks.order}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-full bg-[#E63946] px-8 py-4 text-base font-bold text-white shadow-lg shadow-red-500/20 transition hover:bg-[#d32f3b]"
+            >
+              {t.ctaOrder}
+            </a>
+            <a
+              href={ctaLinks.uberEats}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/10 px-8 py-4 text-base font-bold text-white transition hover:bg-white/20"
+            >
+              {t.ctaUberEats}
+            </a>
+            <a
+              href={ctaLinks.glovo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/10 px-8 py-4 text-base font-bold text-white transition hover:bg-white/20"
+            >
+              {t.ctaGlovo}
+            </a>
+          </div>
         </div>
       </div>
-    </header>
+    </section>
   );
 }

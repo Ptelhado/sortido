@@ -1,4 +1,4 @@
-import { useLang } from "@/context/LanguageContext";
+﻿import { useLang } from "@/context/LanguageContext";
 import {
   categories,
   bestSellers,
@@ -184,7 +184,7 @@ export function FinalCtaSection() {
         </h2>
         <p className="mt-4 text-base text-gray-500">{t.finalCtaSubtitle}</p>
 
-        {/* CTA Group — same 3 buttons */}
+        {/* CTA Group â€” same 3 buttons */}
         <div className="mt-10 flex flex-col items-center gap-3 sm:flex-row sm:justify-center sm:gap-4">
           <a
             href={ctaLinks.order}
