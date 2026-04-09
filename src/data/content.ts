@@ -227,7 +227,7 @@ export const footerData = {
 export const translations = {
   pt: {
     // Header
-    headerCta: "Encomendar",
+    headerCta: "Sobre nós",
     // Hero
     heroHeadline: "Bebidas geladas e essenciais,\nentregues em minutos.",
     heroSubtitle:
@@ -259,7 +259,7 @@ export const translations = {
   },
   en: {
     // Header
-    headerCta: "Order now",
+    headerCta: "About us",
     // Hero
     heroHeadline: "Chilled drinks & essentials,\ndelivered in minutes.",
     heroSubtitle:

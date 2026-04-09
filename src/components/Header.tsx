@@ -1,17 +1,19 @@
-import { useLang } from "@/context/LanguageContext";
+﻿import { useLang } from "@/context/LanguageContext";
 import { ctaLinks } from "@/data/content";
 
 export default function Header() {
   const { lang, toggleLang, t } = useLang();
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
+    <header className="sticky top-0 z-50 w-full bg-[#E63946] text-white border-b border-white/10 shadow-sm shadow-slate-900/10">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2">
-          <span className="text-2xl font-extrabold tracking-tight text-[#E63946]">
-            Sortido
-          </span>
+          <img
+            src="/sortido_logo.svg"
+            alt="Sortido logo"
+            className="h-10 w-auto"
+          />
         </a>
 
         {/* Right side: lang toggle + CTA */}
@@ -19,20 +21,20 @@ export default function Header() {
           {/* Language Toggle */}
           <button
             onClick={toggleLang}
-            className="flex items-center gap-1 rounded-full border border-gray-200 bg-gray-50 px-3 py-1.5 text-sm font-semibold text-gray-700 transition-colors hover:bg-gray-100"
+            className="flex items-center gap-1 rounded-full border border-white/20 bg-white/10 px-3 py-1.5 text-sm font-semibold text-white transition-colors hover:bg-white/20"
             aria-label="Toggle language"
           >
             <span
               className={
-                lang === "pt" ? "text-[#E63946] font-bold" : "text-gray-400"
+                lang === "pt" ? "font-bold" : "text-white/70"
               }
             >
               PT
             </span>
-            <span className="text-gray-300">/</span>
+            <span className="text-white/50">/</span>
             <span
               className={
-                lang === "en" ? "text-[#E63946] font-bold" : "text-gray-400"
+                lang === "en" ? "font-bold" : "text-white/70"
               }
             >
               EN
@@ -44,7 +46,7 @@ export default function Header() {
             href={ctaLinks.order}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden sm:inline-flex items-center rounded-full bg-[#E63946] px-5 py-2 text-sm font-bold text-white shadow-md transition-all hover:bg-[#d32f3b] hover:shadow-lg"
+            className="hidden sm:inline-flex items-center rounded-full bg-white px-5 py-2 text-sm font-bold text-[#E63946] shadow-md shadow-slate-900/20 transition-all hover:bg-slate-100"
           >
             {t.headerCta}
           </a>
