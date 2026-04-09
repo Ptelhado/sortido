@@ -16,20 +16,16 @@ export default function Hero() {
       </div>
 
       <div className="relative mx-auto max-w-6xl px-4 py-24 sm:px-6 lg:px-8">
-        <div className="mx-auto flex min-h-[calc(100vh-80px)] max-w-4xl flex-col justify-center gap-6 text-left">
-          <span className="inline-flex items-center rounded-full border border-slate-200/20 bg-slate-900/70 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.35em] text-slate-200">
-            PREMIUM CONVENIENCE
-          </span>
-
+        <div className="mx-auto flex min-h-[calc(100vh-80px)] max-w-4xl flex-col justify-center gap-6 text-center">
           <h1 className="text-4xl font-black tracking-tight text-white sm:text-5xl lg:text-6xl whitespace-pre-line">
             {t.heroHeadline}
           </h1>
 
-          <p className="max-w-2xl text-lg leading-8 text-slate-200/80">
+          <p className="mx-auto max-w-2xl text-lg leading-8 text-slate-200/80">
             {t.heroSubtitle}
           </p>
 
-          <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+          <div className="mx-auto flex w-full max-w-3xl flex-col items-center justify-center gap-3 sm:flex-row sm:flex-wrap">
             <a
               href={ctaLinks.order}
               target="_blank"
