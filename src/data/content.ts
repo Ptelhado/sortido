@@ -13,15 +13,6 @@ export const ctaLinks = {
 };
 
 // --- Hero Delivery Partners (logos as CTA buttons) ---
-export interface HeroPartnerCta {
-  id: "uber-eats" | "glovo" | "bolt";
-  href?: string;
-  logoSrc: string;
-  alt: string;
-  comingSoon?: boolean;
-  logoWidthClass?: string;
-}
-
 export const heroPartnerCtas: HeroPartnerCta[] = [
   {
     id: "uber-eats",
