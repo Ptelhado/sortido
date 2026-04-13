@@ -1,5 +1,5 @@
 import { useLang } from "@/context/LanguageContext";
-import { ctaLinks, heroImage, heroPartnerCtas } from "@/data/content";
+import { heroImage, heroPartnerCtas } from "@/data/content";
 
 export default function Hero() {
   const { t } = useLang();
@@ -25,18 +25,20 @@ export default function Hero() {
             {t.heroSubtitle}
           </p>
 
-          <div className="mx-auto mt-2 flex w-full max-w-3xl flex-wrap items-start justify-center gap-4">
-
-            <a href={ctaLinks.order} target="_blank" rel="noopener noreferrer" className="outline-none focus-visible:ring-2 focus-visible:ring-white/60 rounded-full">
-              <img src="https://raw.githubusercontent.com/Ptelhado/sortido/main/public/uber-eats.png" alt="Encomendar" className="h-14 w-auto object-contain" draggable={false} />
-            </a>
-
+          <div className="mx-auto mt-4 flex flex-wrap items-start justify-center gap-6">
             {heroPartnerCtas.map((partner) => {
-              const logoButton = (
+              const logo = (
                 <div className="flex flex-col items-center">
-                  <div className={["flex h-14 min-w-[148px] items-center justify-center rounded-full px-5","border border-white/15 bg-white/10 backdrop-blur-md","shadow-[0_8px_30px_rgba(0,0,0,0.18)] transition",partner.comingSoon ? "cursor-default opacity-80" : "hover:bg-white/16 hover:border-white/25",].join(" ")}>
-                    <img src={partner.logoSrc} alt={partner.alt} className={["block h-auto max-h-8 w-auto object-contain",partner.logoWidthClass ?? "max-w-[100px]",].join(" ")} draggable={false} />
-                  </div>
+                  <img
+                    src={partner.logoSrc}
+                    alt={partner.alt}
+                    className={[
+                      "block h-14 w-auto object-contain",
+                      partner.logoWidthClass ?? "max-w-[100px]",
+                      partner.comingSoon ? "opacity-80" : "",
+                    ].join(" ")}
+                    draggable={false}
+                  />
                   {partner.comingSoon && (
                     <span className="mt-2 text-xs font-semibold tracking-wide text-white/80">
                       {t.ctaComingSoon}
@@ -48,14 +50,21 @@ export default function Hero() {
               if (partner.comingSoon || !partner.href) {
                 return (
                   <div key={partner.id} aria-label={partner.alt}>
-                    {logoButton}
+                    {logo}
                   </div>
                 );
               }
 
               return (
-                <a key={partner.id} href={partner.href} target="_blank" rel="noopener noreferrer" aria-label={partner.alt} className="outline-none focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:ring-offset-2 focus-visible:ring-offset-transparent rounded-full">
-                  {logoButton}
+                <a
+                  key={partner.id}
+                  href={partner.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={partner.alt}
+                  className="outline-none rounded-full focus-visible:ring-2 focus-visible:ring-white/60"
+                >
+                  {logo}
                 </a>
               );
             })}
