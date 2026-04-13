@@ -1,10 +1,10 @@
-﻿import { useLang } from "@/context/LanguageContext";
+import { useLang } from "@/context/LanguageContext";
 import {
   categories,
   bestSellers,
   features,
-  ctaLinks,
   deliveryImage,
+  heroPartnerCtas,
 } from "@/data/content";
 import type { Lang } from "@/data/content";
 
@@ -26,7 +26,7 @@ export function CategoriesSection() {
           {categories.map((cat) => (
             <div
               key={cat.id}
-              className="group relative overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:shadow-xl hover:-translate-y-1"
+              className="group relative overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:-translate-y-1 hover:shadow-xl"
             >
               <div className="aspect-[4/3] overflow-hidden">
                 <img
@@ -91,17 +91,15 @@ function BestSellerCard({
       href={item.href}
       target="_blank"
       rel="noopener noreferrer"
-      className="group flex flex-col overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm transition-all hover:shadow-lg hover:-translate-y-1"
+      className="group flex flex-col overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
     >
-      {/* Title above image */}
-      <div className="px-4 pt-4 pb-2">
-        <h3 className="text-sm font-semibold text-[#0A1628] group-hover:text-[#E63946] transition-colors line-clamp-1">
+      <div className="px-4 pb-2 pt-4">
+        <h3 className="line-clamp-1 text-sm font-semibold text-[#0A1628] transition-colors group-hover:text-[#E63946]">
           {title}
         </h3>
       </div>
 
-      {/* Image */}
-      <div className="aspect-square overflow-hidden mx-3 rounded-xl bg-gray-50">
+      <div className="mx-3 aspect-square overflow-hidden rounded-xl bg-gray-50">
         <img
           src={item.image}
           alt={title}
@@ -109,7 +107,6 @@ function BestSellerCard({
         />
       </div>
 
-      {/* Marketplace badge */}
       <div className="flex items-center gap-1.5 px-4 py-3">
         <span
           className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-bold ${
@@ -137,7 +134,6 @@ export function FeaturesSection() {
       id="features"
       className="relative w-full overflow-hidden bg-[#0A1628] py-16 sm:py-24"
     >
-      {/* Background image */}
       <div className="absolute inset-0 opacity-20">
         <img
           src={deliveryImage}
@@ -155,7 +151,7 @@ export function FeaturesSection() {
           {features.map((feat) => (
             <div
               key={feat.id}
-              className="group rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-all hover:bg-white/10 hover:border-white/20"
+              className="group rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-all hover:border-white/20 hover:bg-white/10"
             >
               <span className="mb-4 block text-3xl">{feat.icon}</span>
               <h3 className="mb-2 text-lg font-bold text-white">
@@ -184,32 +180,55 @@ export function FinalCtaSection() {
         </h2>
         <p className="mt-4 text-base text-gray-500">{t.finalCtaSubtitle}</p>
 
-        {/* CTA Group â€” same 3 buttons */}
-        <div className="mt-10 flex flex-col items-center gap-3 sm:flex-row sm:justify-center sm:gap-4">
-          <a
-            href={ctaLinks.order}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex w-full items-center justify-center rounded-full bg-[#E63946] px-8 py-3.5 text-base font-bold text-white shadow-lg shadow-red-500/20 transition-all hover:bg-[#d32f3b] hover:shadow-xl sm:w-auto"
-          >
-            {t.ctaOrder}
-          </a>
-          <a
-            href={ctaLinks.uberEats}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex w-full items-center justify-center rounded-full border-2 border-[#0A1628] bg-transparent px-7 py-3.5 text-base font-bold text-[#0A1628] transition-all hover:bg-[#0A1628] hover:text-white sm:w-auto"
-          >
-            {t.ctaUberEats}
-          </a>
-          <a
-            href={ctaLinks.glovo}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex w-full items-center justify-center rounded-full border-2 border-[#0A1628] bg-transparent px-7 py-3.5 text-base font-bold text-[#0A1628] transition-all hover:bg-[#0A1628] hover:text-white sm:w-auto"
-          >
-            {t.ctaGlovo}
-          </a>
+        <div className="mt-10 flex flex-wrap items-start justify-center gap-6">
+          {heroPartnerCtas.map((partner) => {
+            const spacingClass =
+              partner.id === "uber-eats"
+                ? "mr-[5px]"
+                : partner.id === "bolt"
+                ? "ml-[5px]"
+                : "";
+
+            const logo = (
+              <div className={`flex flex-col items-center ${spacingClass}`}>
+                <img
+                  src={partner.logoSrc}
+                  alt={partner.alt}
+                  className={[
+                    "block h-14 w-auto object-contain",
+                    partner.logoWidthClass ?? "max-w-[100px]",
+                    partner.comingSoon ? "opacity-80" : "",
+                  ].join(" ")}
+                  draggable={false}
+                />
+                {partner.comingSoon && (
+                  <span className="mt-2 text-xs font-semibold tracking-wide text-gray-500">
+                    {t.ctaComingSoon}
+                  </span>
+                )}
+              </div>
+            );
+
+            if (partner.comingSoon || !partner.href) {
+              return (
+                <div key={partner.id} aria-label={partner.alt}>
+                  {logo}
+                </div>
+              );
+            }
+
+            return (
+              <a
+                key={partner.id}
+                href={partner.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={partner.alt}
+              >
+                {logo}
+              </a>
+            );
+          })}
         </div>
       </div>
     </section>
