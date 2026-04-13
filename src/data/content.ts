@@ -9,7 +9,7 @@ export const ctaLinks = {
   order: "https://sortido.pt/order",
   about: "https://maps.app.goo.gl/5sAat1fMhLRFvYYz7",
   uberEats: "https://www.ubereats.com/pt-en/store/sortido-lisboa/dVKCqH2PUaqlcIaGdgbmxA?srsltid=AfmBOor-W3wTMUB9NiAxeQ5xW8g5WFShgXV5fb9f0sZT6UMu2gdE94ut",
-  glovo: "https://glovoapp.com/pt/pt/sortido",
+  glovo: "https://glovoapp.com/pt/pt/lisboa/stores/sortido-lis",
 };
 
 // --- Hero Delivery Partners (logos as CTA buttons) ---
@@ -23,7 +23,7 @@ export const heroPartnerCtas: HeroPartnerCta[] = [
   },
   {
     id: "glovo",
-    href: "https://glovoapp.com/pt/pt/sortido",
+    href: "https://glovoapp.com/pt/pt/lisboa/stores/sortido-lis",
     logoSrc: "/glovo.png",
     alt: "Glovo",
     logoWidthClass: "max-w-[92px]",
