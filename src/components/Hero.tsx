@@ -26,7 +26,7 @@ export default function Hero() {
           </p>
 
           <div className="mx-auto mt-2 flex w-full max-w-3xl flex-wrap items-start justify-center gap-4">
-            {/* Encomendar image button */}
+
             
               href={ctaLinks.order}
               target="_blank"
