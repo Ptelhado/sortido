@@ -110,21 +110,33 @@ export interface BestSeller {
   titleEN: string;
   image: string;
   href: string;
-  marketplace: "Glovo" | "Bolt";
+  marketplace: "Uber Eats" | "Glovo" | "Bolt";
 }
 
 export const bestSellers: BestSeller[] = [
+  // Left column — Uber Eats
   {
-    id: "super-bock",
+    id: "super-bock-uber",
     titlePT: "Super Bock Original",
     titleEN: "Super Bock Original",
     image:
       "https://mgx-backend-cdn.metadl.com/generate/images/1075182/2026-04-07/0ed41f5a-9308-4005-ba07-9e82f82fd25f.png",
-    href: "https://glovoapp.com/pt/pt/sortido/super-bock",
-    marketplace: "Glovo",
+    href: ctaLinks.uberEats,
+    marketplace: "Uber Eats",
   },
   {
-    id: "coca-cola",
+    id: "monster-energy-uber",
+    titlePT: "Monster Energy",
+    titleEN: "Monster Energy",
+    image:
+      "https://mgx-backend-cdn.metadl.com/generate/images/1075182/2026-04-07/d93db569-f48c-4c2a-a61d-d0ad66506d98.png",
+    href: ctaLinks.uberEats,
+    marketplace: "Uber Eats",
+  },
+
+  // Middle column — Glovo
+  {
+    id: "coca-cola-glovo",
     titlePT: "Coca-Cola Gelada",
     titleEN: "Ice-Cold Coca-Cola",
     image:
@@ -133,7 +145,18 @@ export const bestSellers: BestSeller[] = [
     marketplace: "Glovo",
   },
   {
-    id: "agua-luso",
+    id: "compal-glovo",
+    titlePT: "Compal Clássico",
+    titleEN: "Compal Classic",
+    image:
+      "https://mgx-backend-cdn.metadl.com/generate/images/1075182/2026-04-07/ffe1dd88-25b9-456d-b9fe-adc3157f81c9.png",
+    href: "https://glovoapp.com/pt/pt/sortido/compal",
+    marketplace: "Glovo",
+  },
+
+  // Right column — Bolt
+  {
+    id: "agua-luso-bolt",
     titlePT: "Água Luso 1.5L",
     titleEN: "Luso Water 1.5L",
     image:
@@ -142,31 +165,13 @@ export const bestSellers: BestSeller[] = [
     marketplace: "Bolt",
   },
   {
-    id: "monster-energy",
-    titlePT: "Monster Energy",
-    titleEN: "Monster Energy",
-    image:
-      "https://mgx-backend-cdn.metadl.com/generate/images/1075182/2026-04-07/d93db569-f48c-4c2a-a61d-d0ad66506d98.png",
-    href: "https://glovoapp.com/pt/pt/sortido/monster-energy",
-    marketplace: "Glovo",
-  },
-  {
-    id: "sagres",
+    id: "sagres-bolt",
     titlePT: "Sagres Branca",
     titleEN: "Sagres Lager",
     image:
       "https://mgx-backend-cdn.metadl.com/generate/images/1075182/2026-04-07/0ed41f5a-9308-4005-ba07-9e82f82fd25f.png",
     href: "https://bolt.eu/pt/food/sortido/sagres",
     marketplace: "Bolt",
-  },
-  {
-    id: "compal",
-    titlePT: "Compal Clássico",
-    titleEN: "Compal Classic",
-    image:
-      "https://mgx-backend-cdn.metadl.com/generate/images/1075182/2026-04-07/ffe1dd88-25b9-456d-b9fe-adc3157f81c9.png",
-    href: "https://glovoapp.com/pt/pt/sortido/compal",
-    marketplace: "Glovo",
   },
 ];
 
@@ -268,9 +273,9 @@ export const footerData = {
 export const translations = {
   pt: {
     headerCta: "Sobre nós",
-    heroHeadline: "Produtos entregues em minutos.",
+    heroHeadline: "Bebidas geladas e essenciais,\nentregues em minutos.",
     heroSubtitle:
-      "Receba tudo à tua porta em menos de 20 minutos. \nAberto 24 horas por dia, 7 dias por semana.",
+      "O supermercado de conveniência premium. Sempre gelados, sempre rápidos.",
     ctaOrder: "Encomendar",
     ctaComingSoon: "Em breve",
     ctaUberEats: "Uber Eats",
@@ -296,7 +301,7 @@ export const translations = {
     headerCta: "About us",
     heroHeadline: "Chilled drinks & essentials,\ndelivered in minutes.",
     heroSubtitle:
-      "Get everything delivered to your door in under 20 minutes. \Open 24 hours a day, 7 days a week.",
+      "The premium convenience supermarket. Always chilled, always fast.",
     ctaOrder: "Order now",
     ctaComingSoon: "Coming soon",
     ctaUberEats: "Uber Eats",
