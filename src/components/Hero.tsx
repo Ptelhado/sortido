@@ -20,11 +20,11 @@ export default function Hero() {
           <h1 className="whitespace-pre-line text-4xl font-black tracking-tight text-white sm:text-5xl lg:text-6xl">
             {t.heroHeadline}
           </h1>
-
-          <p className="mx-auto max-w-2xl text-lg leading-8 text-slate-200/80">
+          
+          <p className="mx-auto max-w-2xl whitespace-pre-line text-lg leading-8 text-slate-200/80">
             {t.heroSubtitle}
           </p>
-
+          
           <div className="mx-auto mt-4 flex flex-wrap items-start justify-center gap-6">
             {heroPartnerCtas.map((partner) => {
               const spacingClass =
