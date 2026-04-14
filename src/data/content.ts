@@ -275,7 +275,7 @@ export const translations = {
     headerCta: "Sobre nós",
     heroHeadline: "Produtos entregues em minutos.",
     heroSubtitle:
-      "O supermercado de conveniência premium,\nSempre gelados, sempre rápidos.",
+      "Recebe tudo à tua porta em menos de 20 minutos.\nAberto 24 horas por dia, 7 dias por semana.",
     ctaOrder: "Encomendar",
     ctaComingSoon: "Em breve",
     ctaUberEats: "Uber Eats",
@@ -301,7 +301,7 @@ export const translations = {
     headerCta: "About us",
     heroHeadline: "Products delivered in minutes.",
     heroSubtitle:
-      "The premium convenience supermarket. Always chilled, always fast.",
+      "Get everything delivered to your door in under 20 minutes.\nOpen 24/7.",
     ctaOrder: "Order now",
     ctaComingSoon: "Coming soon",
     ctaUberEats: "Uber Eats",
