@@ -301,7 +301,7 @@ export const translations = {
     ctaComingSoon: "Coming soon",
     ctaUberEats: "Uber Eats",
     ctaGlovo: "Glovo",
-    categoriesTitle: "Most ordered",
+    categoriesTitle: "The different categories",
     categoriesSubtitle: "Pick a category and open it on Uber Eats",
     bestSellersTitle: "Best sellers",
     bestSellersSubtitle: "Our customers' favorites",
