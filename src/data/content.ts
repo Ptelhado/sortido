@@ -275,7 +275,7 @@ export const translations = {
     headerCta: "Sobre nós",
     heroHeadline: "Produtos entregues em minutos.",
     heroSubtitle:
-      "Recebe tudo à tua porta em menos de 20 minutos.\nAberto 24 horas por dia, 7 dias por semana.",
+      "Recebe tudo à tua porta em menos de 20 minutos.\nAberto 24/7.",
     ctaOrder: "Encomendar",
     ctaComingSoon: "Em breve",
     ctaUberEats: "Uber Eats",
