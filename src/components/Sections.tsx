@@ -24,9 +24,13 @@ export function CategoriesSection() {
 
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
           {categories.map((cat) => (
-            <div
+            <a
               key={cat.id}
+              href={cat.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="group relative overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:-translate-y-1 hover:shadow-xl"
+              aria-label={`${lang === "pt" ? cat.titlePT : cat.titleEN} - ${cat.uberCategory}`}
             >
               <div className="aspect-[4/3] overflow-hidden">
                 <img
@@ -35,13 +39,24 @@ export function CategoriesSection() {
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+
+              <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent" />
+
+              <div className="absolute left-4 top-4">
+                <span className="inline-flex rounded-full bg-white/90 px-3 py-1 text-xs font-bold text-[#0A1628]">
+                  {lang === "pt" ? cat.badgePT : cat.badgeEN}
+                </span>
+              </div>
+
               <div className="absolute bottom-0 left-0 right-0 p-5">
                 <h3 className="text-xl font-bold text-white">
                   {lang === "pt" ? cat.titlePT : cat.titleEN}
                 </h3>
+                <p className="mt-1 text-sm text-white/80">
+                  {lang === "pt" ? cat.subtitlePT : cat.subtitleEN}
+                </p>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>
