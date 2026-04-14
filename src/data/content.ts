@@ -223,7 +223,7 @@ export const translations = {
   pt: {
     headerCta: "Sobre nós",
     heroHeadline: "Bebidas geladas e essenciais,\nentregues em minutos.",
-    heroSubtitle: "O supermercado de conveniência premium. Cervejas, refrigerantes, águas e snacks — sempre gelados, sempre rápidos.",
+    heroSubtitle: "O supermercado de conveniência premium. Cervejas, refrigerantes, águas e snacks. Sempre gelados, sempre rápidos.",
     ctaOrder: "Encomendar",
     ctaComingSoon: "Em breve",
     ctaUberEats: "Uber Eats",
