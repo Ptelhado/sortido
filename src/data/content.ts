@@ -62,8 +62,6 @@ export interface Category {
   titleEN: string;
   subtitlePT: string;
   subtitleEN: string;
-  badgePT?: string;
-  badgeEN?: string;
   image: string;
   href: string;
   uberCategory: string;
@@ -76,11 +74,9 @@ export const categories: Category[] = [
     titleEN: "Beer & Cider",
     subtitlePT: "As mais pedidas para o fim do dia",
     subtitleEN: "Top picks for the end of the day",
-    badgePT: "Mais pedidos",
-    badgeEN: "Most ordered",
     image:
       "https://mgx-backend-cdn.metadl.com/generate/images/1075182/2026-04-07/0ed41f5a-9308-4005-ba07-9e82f82fd25f.png",
-    href: ctaLinks.uberEats,
+    href: "https://www.ubereats.com/pt-en/store/sortido-lisboa/dVKCqH2PUaqlcIaGdgbmxA/755282a8-7d8f-51aa-a570-86867606e6c4/4ac421bb-e462-49f0-96f3-3b5ee26ce102?ps=1&scats=4ac421bb-e462-49f0-96f3-3b5ee26ce102&scatsubs=",
     uberCategory: "Cervejas e Sidra",
   },
   {
@@ -89,12 +85,10 @@ export const categories: Category[] = [
     titleEN: "Soft Drinks & Water",
     subtitlePT: "Sempre gelados, sempre prontos",
     subtitleEN: "Always chilled, always ready",
-    badgePT: "Sempre gelado",
-    badgeEN: "Always chilled",
     image:
       "https://mgx-backend-cdn.metadl.com/generate/images/1075182/2026-04-07/d93db569-f48c-4c2a-a61d-d0ad66506d98.png",
-    href: ctaLinks.uberEats,
-    uberCategory: "Sumos e Refrigerantes / Água",
+    href: "https://www.ubereats.com/pt-en/store/sortido-lisboa/dVKCqH2PUaqlcIaGdgbmxA/755282a8-7d8f-51aa-a570-86867606e6c4/d6eb5b8d-ecfa-4147-b796-d3c2873dd834?ps=1&scats=d6eb5b8d-ecfa-4147-b796-d3c2873dd834&scatsubs=",
+    uberCategory: "Refrigerantes & Águas",
   },
   {
     id: "snacks-sweets",
@@ -102,12 +96,10 @@ export const categories: Category[] = [
     titleEN: "Snacks & Sweets",
     subtitlePT: "Para acompanhar qualquer pedido",
     subtitleEN: "Perfect add-ons for any order",
-    badgePT: "Para acompanhar",
-    badgeEN: "Best add-ons",
     image:
       "https://mgx-backend-cdn.metadl.com/generate/images/1075182/2026-04-07/ffe1dd88-25b9-456d-b9fe-adc3157f81c9.png",
-    href: ctaLinks.uberEats,
-    uberCategory: "Snacks / Mercearia Doce",
+    href: "https://www.ubereats.com/pt-en/store/sortido-lisboa/dVKCqH2PUaqlcIaGdgbmxA?srsltid=AfmBOor-W3wTMUB9NiAxeQ5xW8g5WFShgXV5fb9f0sZT6UMu2gdE94ut",
+    uberCategory: "Snacks & Doces",
   },
 ];
 
