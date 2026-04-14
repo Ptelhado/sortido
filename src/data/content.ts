@@ -273,9 +273,9 @@ export const footerData = {
 export const translations = {
   pt: {
     headerCta: "Sobre nós",
-    heroHeadline: "Bebidas geladas e essenciais,\nentregues em minutos.",
+    heroHeadline: "Produtos entregues em minutos.",
     heroSubtitle:
-      "O supermercado de conveniência premium. Sempre gelados, sempre rápidos.",
+      "O supermercado de conveniência premium,\nSempre gelados, sempre rápidos.",
     ctaOrder: "Encomendar",
     ctaComingSoon: "Em breve",
     ctaUberEats: "Uber Eats",
@@ -299,7 +299,7 @@ export const translations = {
   },
   en: {
     headerCta: "About us",
-    heroHeadline: "Chilled drinks & essentials,\ndelivered in minutes.",
+    heroHeadline: "Products delivered in minutes.",
     heroSubtitle:
       "The premium convenience supermarket. Always chilled, always fast.",
     ctaOrder: "Order now",
