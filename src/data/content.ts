@@ -188,12 +188,12 @@ export interface Feature {
 export const features: Feature[] = [
   {
     id: "fast",
-    titlePT: "Entrega em minutos",
-    titleEN: "Delivery in minutes",
+    titlePT: "Mais rápido que supermercados",
+    titleEN: "Faster than supermarkets",
     descPT:
-      "Recebe as tuas bebidas geladas e essenciais em minutos, diretamente à tua porta.",
+      "Não esperes pelo dia seguinte. Recebe já.",
     descEN:
-      "Get your chilled drinks and essentials in minutes, straight to your door.",
+      "No next-day delivery. Get what you need now.",
     icon: "⚡",
   },
   {
@@ -205,19 +205,19 @@ export const features: Feature[] = [
     icon: "❄️",
   },
   {
-    id: "premium",
-    titlePT: "Marcas premium",
-    titleEN: "Premium brands",
-    descPT: "Seleção curada das melhores marcas nacionais e internacionais.",
-    descEN: "Curated selection of the best national and international brands.",
-    icon: "✨",
+    id: "unmatched",
+    titlePT: "Aberto quando os outros fecham",
+    titleEN: "Open when others aren’t",
+    descPT: "De madrugada ou cedo de manhã — estamos sempre disponíveis.",
+    descEN: "Late-night? Early morning? We’re always on.",
+    icon: "🌙",
   },
   {
     id: "convenience",
-    titlePT: "Conveniência real",
-    titleEN: "Real convenience",
-    descPT: "Disponível no Uber Eats e Glovo. Encomenda onde quiseres.",
-    descEN: "Available on Uber Eats and Glovo. Order wherever you want.",
+    titlePT: "Feito para ser simples",
+    titleEN: "Built for convenience",
+    descPT: "Pede pouco ou muito. Sem complicações.",
+    descEN: "Small orders are welcome. No stress.",
     icon: "📱",
   },
 ];
