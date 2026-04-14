@@ -62,6 +62,16 @@ export function CategoriesSection() {
 export function BestSellersSection() {
   const { lang, t } = useLang();
 
+  const uberEatsItems = bestSellers.filter(
+    (item) => item.marketplace === "Uber Eats"
+  );
+  const glovoItems = bestSellers.filter(
+    (item) => item.marketplace === "Glovo"
+  );
+  const boltItems = bestSellers.filter(
+    (item) => item.marketplace === "Bolt"
+  );
+
   return (
     <section id="bestsellers" className="w-full bg-white py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
@@ -74,10 +84,27 @@ export function BestSellersSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:gap-6">
-          {bestSellers.map((item) => (
-            <BestSellerCard key={item.id} item={item} lang={lang} />
-          ))}
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+          {/* Left column — Uber Eats */}
+          <div className="flex flex-col gap-6">
+            {uberEatsItems.map((item) => (
+              <BestSellerCard key={item.id} item={item} lang={lang} />
+            ))}
+          </div>
+
+          {/* Middle column — Glovo */}
+          <div className="flex flex-col gap-6">
+            {glovoItems.map((item) => (
+              <BestSellerCard key={item.id} item={item} lang={lang} />
+            ))}
+          </div>
+
+          {/* Right column — Bolt */}
+          <div className="flex flex-col gap-6">
+            {boltItems.map((item) => (
+              <BestSellerCard key={item.id} item={item} lang={lang} />
+            ))}
+          </div>
         </div>
       </div>
     </section>
