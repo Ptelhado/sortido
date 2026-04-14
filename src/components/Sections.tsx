@@ -24,13 +24,9 @@ export function CategoriesSection() {
 
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
           {categories.map((cat) => (
-            <a
+            <div
               key={cat.id}
-              href={cat.href}
-              target="_blank"
-              rel="noopener noreferrer"
               className="group relative overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:-translate-y-1 hover:shadow-xl"
-              aria-label={`${lang === "pt" ? cat.titlePT : cat.titleEN} - ${cat.uberCategory}`}
             >
               <div className="aspect-[4/3] overflow-hidden">
                 <img
@@ -50,7 +46,7 @@ export function CategoriesSection() {
                   {lang === "pt" ? cat.subtitlePT : cat.subtitleEN}
                 </p>
               </div>
-            </a>
+            </div>
           ))}
         </div>
       </div>
@@ -85,21 +81,18 @@ export function BestSellersSection() {
         </div>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-          {/* Left column — Uber Eats */}
           <div className="flex flex-col gap-6">
             {uberEatsItems.map((item) => (
               <BestSellerCard key={item.id} item={item} lang={lang} />
             ))}
           </div>
 
-          {/* Middle column — Glovo */}
           <div className="flex flex-col gap-6">
             {glovoItems.map((item) => (
               <BestSellerCard key={item.id} item={item} lang={lang} />
             ))}
           </div>
 
-          {/* Right column — Bolt */}
           <div className="flex flex-col gap-6">
             {boltItems.map((item) => (
               <BestSellerCard key={item.id} item={item} lang={lang} />
