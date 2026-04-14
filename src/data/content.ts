@@ -114,7 +114,7 @@ export interface BestSeller {
 }
 
 export const bestSellers: BestSeller[] = [
-  // Left column — Uber Eats
+  // Uber Eats
   {
     id: "super-bock-uber",
     titlePT: "Super Bock Original",
@@ -134,7 +134,7 @@ export const bestSellers: BestSeller[] = [
     marketplace: "Uber Eats",
   },
 
-  // Middle column — Glovo
+  // Glovo
   {
     id: "coca-cola-glovo",
     titlePT: "Coca-Cola Gelada",
@@ -154,7 +154,7 @@ export const bestSellers: BestSeller[] = [
     marketplace: "Glovo",
   },
 
-  // Right column — Bolt
+  // Bolt
   {
     id: "agua-luso-bolt",
     titlePT: "Água Luso 1.5L",
