@@ -8,11 +8,8 @@ import {
 } from "@/data/content";
 import type { Lang } from "@/data/content";
 
-// ---- Categories Section ----
-export function CategoriesSection() {
-  const { lang, t } = useLang();
-
-  export function NewTopSection() {
+// ---- New Top Section ----
+export function NewTopSection() {
   return (
     <section id="new-top-section" className="w-full bg-[#FAFBFC] py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
@@ -21,6 +18,11 @@ export function CategoriesSection() {
     </section>
   );
 }
+
+// ---- Categories Section ----
+export function CategoriesSection() {
+  const { lang, t } = useLang();
+
   return (
     <section id="categories" className="w-full bg-white py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
