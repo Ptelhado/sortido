@@ -13,7 +13,46 @@ export function NewTopSection() {
   return (
     <section id="new-top-section" className="w-full bg-[#FAFBFC] py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        {/* Add your future section 1 content here */}
+        <div className="mb-12 text-center">
+          <h2 className="text-3xl font-extrabold tracking-tight text-[#0A1628] sm:text-4xl">
+            Big Deal: as melhores ofertas
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
+          <a
+            href="https://www.ubereats.com/pt-en/store/sortido-lisboa/dVKCqH2PUaqlcIaGdgbmxA/755282a8-7d8f-51aa-a570-86867606e6c4/e04d6e55-3e0e-5b8a-9ebd-03ffee9017c0?ps=1&scats=e04d6e55-3e0e-5b8a-9ebd-03ffee9017c0&scatsubs="
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex min-h-[140px] items-center justify-center rounded-2xl border border-gray-200 bg-white p-6 text-center shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
+          >
+            <span className="text-lg font-bold text-[#0A1628]">
+              Big Deal - Uber
+            </span>
+          </a>
+
+          <a
+            href="https://glovoapp.com/pt/pt/lisboa/stores/sortido-lis?content=combos-sc.52490173%2Fagua-sumos-e-refrigerantes-c.52490170"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex min-h-[140px] items-center justify-center rounded-2xl border border-gray-200 bg-white p-6 text-center shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
+          >
+            <span className="text-lg font-bold text-[#0A1628]">
+              Combos - Glovo
+            </span>
+          </a>
+
+          <a
+            href="https://food.bolt.eu/pt-pt/386-lisbon/p/186270-sortido/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex min-h-[140px] items-center justify-center rounded-2xl border border-gray-200 bg-white p-6 text-center shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
+          >
+            <span className="text-lg font-bold text-[#0A1628]">
+              Combos - Bolt
+            </span>
+          </a>
+        </div>
       </div>
     </section>
   );
