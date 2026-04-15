@@ -12,8 +12,17 @@ import type { Lang } from "@/data/content";
 export function CategoriesSection() {
   const { lang, t } = useLang();
 
+  export function NewTopSection() {
   return (
-    <section id="categories" className="w-full bg-[#FAFBFC] py-16 sm:py-24">
+    <section id="new-top-section" className="w-full bg-[#FAFBFC] py-16 sm:py-24">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        {/* Add your future section 1 content here */}
+      </div>
+    </section>
+  );
+}
+  return (
+    <section id="categories" className="w-full bg-white py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="mb-12 text-center">
           <h2 className="text-3xl font-extrabold tracking-tight text-[#0A1628] sm:text-4xl">
