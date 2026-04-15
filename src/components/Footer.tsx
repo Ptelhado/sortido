@@ -8,6 +8,29 @@ export default function Footer() {
   const address = lang === "pt" ? footerData.addressPT : footerData.addressEN;
   const hours = lang === "pt" ? footerData.hoursPT : footerData.hoursEN;
 
+  const sectionLinks = [
+    {
+      label: t.footerHome,
+      href: "#hero",
+      external: false,
+    },
+    {
+      label: t.footerDeals,
+      href: "#new-top-section",
+      external: false,
+    },
+    {
+      label: t.footerOrderNow,
+      href: ctaLinks.order,
+      external: true,
+    },
+    {
+      label: t.footerAboutUs,
+      href: ctaLinks.about,
+      external: true,
+    },
+  ];
+
   return (
     <footer className="w-full bg-[#0A1628] text-white">
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
@@ -17,11 +40,11 @@ export default function Footer() {
             <span className="text-2xl font-extrabold tracking-tight text-[#E63946]">
               Sortido
             </span>
+
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/50">
               {t.footerTagline}
             </p>
 
-            {/* Social Links */}
             <div className="mt-6 flex gap-3">
               {socialLinks.map((link) => (
                 <a
@@ -43,14 +66,9 @@ export default function Footer() {
             <h4 className="mb-4 text-sm font-bold uppercase tracking-wider text-white/40">
               {t.footerSections}
             </h4>
+
             <ul className="space-y-2.5">
-              {[
-                { label: t.footerHome, href: "#hero" },
-                { label: t.footerProducts, href: "#categories" },
-                { label: t.footerBestSellers, href: "#bestsellers" },
-                { label: t.footerAbout, href: "#features" },
-                { label: t.footerOrderNow, href: ctaLinks.order, external: true },
-              ].map((item) => (
+              {sectionLinks.map((item) => (
                 <li key={item.label}>
                   <a
                     href={item.href}
@@ -65,11 +83,12 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact Column */}
+          {/* Contact + Hours Column */}
           <div>
             <h4 className="mb-4 text-sm font-bold uppercase tracking-wider text-white/40">
               {contact.title}
             </h4>
+
             <ul className="space-y-2.5 text-sm text-white/60">
               <li>
                 <a
@@ -89,11 +108,14 @@ export default function Footer() {
               </li>
             </ul>
 
-            {/* Hours */}
             <h4 className="mb-3 mt-8 text-sm font-bold uppercase tracking-wider text-white/40">
               {hours.title}
             </h4>
-            <p className="text-sm text-white/60">{hours.line1}</p>
+
+            <div className="space-y-1 text-sm text-white/60">
+              <p>{hours.line1}</p>
+              <p>{hours.line2}</p>
+            </div>
           </div>
 
           {/* Address Column */}
@@ -101,6 +123,7 @@ export default function Footer() {
             <h4 className="mb-4 text-sm font-bold uppercase tracking-wider text-white/40">
               {address.title}
             </h4>
+
             <p className="text-sm leading-relaxed text-white/60">
               {address.line1}
               <br />
@@ -109,7 +132,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom bar */}
         <div className="mt-14 border-t border-white/10 pt-6 text-center">
           <p className="text-xs text-white/30">
             © {new Date().getFullYear()} Sortido. {t.footerRights}
@@ -120,7 +142,6 @@ export default function Footer() {
   );
 }
 
-// Simple SVG social icons
 function SocialIcon({ name }: { name: string }) {
   switch (name) {
     case "instagram":
