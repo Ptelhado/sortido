@@ -40,12 +40,12 @@ export const heroPartnerCtas: HeroPartnerCta[] = [
     logoWidthClass: "max-w-[92px]",
   },
   {
-    id: "bolt",
-    logoSrc: "/bolt-food.png",
-    alt: "Bolt Food",
-    comingSoon: true,
-    logoWidthClass: "max-w-[96px]",
-  },
+  id: "bolt",
+  logoSrc: "/bolt-food.png",
+  alt: "Bolt Food",
+  href: "https://food.bolt.eu/pt-pt/386-lisbon/p/186270-sortido/",
+  comingSoon: false,
+},
 ];
 
 // --- Hero Gallery ---
