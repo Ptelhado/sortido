@@ -16,11 +16,13 @@ export interface HeroPartnerCta {
 
 // --- CTA Links (editable) ---
 export const ctaLinks = {
-  order: "https://sortido.pt/order",
+  order:
+    "https://www.ubereats.com/pt-en/store/sortido-lisboa/dVKCqH2PUaqlcIaGdgbmxA?srsltid=AfmBOor-W3wTMUB9NiAxeQ5xW8g5WFShgXV5fb9f0sZT6UMu2gdE94ut",
   about: "https://maps.app.goo.gl/5sAat1fMhLRFvYYz7",
   uberEats:
     "https://www.ubereats.com/pt-en/store/sortido-lisboa/dVKCqH2PUaqlcIaGdgbmxA?srsltid=AfmBOor-W3wTMUB9NiAxeQ5xW8g5WFShgXV5fb9f0sZT6UMu2gdE94ut",
   glovo: "https://glovoapp.com/pt/pt/lisboa/stores/sortido-lis",
+  bolt: "https://food.bolt.eu/pt-pt/386-lisbon/p/186270-sortido/",
 };
 
 // --- Hero Delivery Partners (logos as CTA buttons) ---
@@ -40,12 +42,12 @@ export const heroPartnerCtas: HeroPartnerCta[] = [
     logoWidthClass: "max-w-[92px]",
   },
   {
-  id: "bolt",
-  logoSrc: "/bolt-food.png",
-  alt: "Bolt Food",
-  href: "https://food.bolt.eu/pt-pt/386-lisbon/p/186270-sortido/",
-  comingSoon: false,
-},
+    id: "bolt",
+    href: ctaLinks.bolt,
+    logoSrc: "/bolt-food.png",
+    alt: "Bolt Food",
+    comingSoon: false,
+  },
 ];
 
 // --- Hero Gallery ---
@@ -111,7 +113,6 @@ export interface BestSeller {
 }
 
 export const bestSellers: BestSeller[] = [
-  // Uber Eats
   {
     id: "super-bock-uber",
     titlePT: "Super Bock Original",
@@ -130,8 +131,6 @@ export const bestSellers: BestSeller[] = [
     href: ctaLinks.uberEats,
     marketplace: "Uber Eats",
   },
-
-  // Glovo
   {
     id: "coca-cola-glovo",
     titlePT: "Coca-Cola Gelada",
@@ -150,8 +149,6 @@ export const bestSellers: BestSeller[] = [
     href: "https://glovoapp.com/pt/pt/sortido/compal",
     marketplace: "Glovo",
   },
-
-  // Bolt
   {
     id: "agua-luso-bolt",
     titlePT: "Água Luso 1.5L",
@@ -187,18 +184,18 @@ export const features: Feature[] = [
     id: "fast",
     titlePT: "Mais rápido que supermercados",
     titleEN: "Faster than supermarkets",
-    descPT:
-      "Não esperes pelo dia seguinte. Recebe já.",
-    descEN:
-      "No next-day delivery. Get what you need now.",
+    descPT: "Não esperes pelo dia seguinte. Recebe já.",
+    descEN: "No next-day delivery. Get what you need now.",
     icon: "⚡",
   },
   {
     id: "cold",
     titlePT: "Sempre gelado",
     titleEN: "Always chilled",
-    descPT: "Todas as bebidas saem do nosso frigorífico. Geladas, como devem ser.",
-    descEN: "Every drink comes straight from our fridge. Ice-cold, as it should be.",
+    descPT:
+      "Todas as bebidas saem do nosso frigorífico. Geladas, como devem ser.",
+    descEN:
+      "Every drink comes straight from our fridge. Ice-cold, as it should be.",
     icon: "❄️",
   },
   {
@@ -250,8 +247,16 @@ export const socialLinks: SocialLink[] = [
 
 // --- Footer Data ---
 export const footerData = {
-  contactPT: { title: "Contacto", phone: "+351 912 345 678", email: "info@sortido.pt" },
-  contactEN: { title: "Contact", phone: "+351 912 345 678", email: "info@sortido.pt" },
+  contactPT: {
+    title: "Contacto",
+    phone: "+351 912 345 678",
+    email: "info@sortido.pt",
+  },
+  contactEN: {
+    title: "Contact",
+    phone: "+351 912 345 678",
+    email: "info@sortido.pt",
+  },
   addressPT: {
     title: "Morada",
     line1: "Rua da Conveniência, 42",
@@ -262,8 +267,16 @@ export const footerData = {
     line1: "Rua da Conveniência, 42",
     line2: "1200-100 Lisbon, Portugal",
   },
-  hoursPT: { title: "Horário", line1: "Seg–Dom: 10h – 02h" },
-  hoursEN: { title: "Hours", line1: "Mon–Sun: 10am – 2am" },
+  hoursPT: {
+    title: "Horário",
+    line1: "Aberto 24h.",
+    line2: "7 dias por semana",
+  },
+  hoursEN: {
+    title: "Hours",
+    line1: "Open 24h.",
+    line2: "7 days a week",
+  },
 };
 
 // --- Translations ---
@@ -278,7 +291,7 @@ export const translations = {
     heroSubtitleLine2: "Aberto 24/7",
 
     // CTA Labels
-    ctaOrder: "Encomendar",
+    ctaOrder: "Encomenda agora",
     ctaComingSoon: "Em breve",
     ctaUberEats: "Uber Eats",
     ctaGlovo: "Glovo",
@@ -303,10 +316,9 @@ export const translations = {
     footerTagline: "Produtos entregues em minutos.",
     footerSections: "Secções",
     footerHome: "Início",
-    footerProducts: "Produtos",
-    footerBestSellers: "Mais Vendidos",
-    footerAbout: "Sobre",
-    footerOrderNow: "Encomendar",
+    footerDeals: "Descontos",
+    footerOrderNow: "Encomenda agora",
+    footerAboutUs: "Sobre nós",
     footerRights: "Todos os direitos reservados.",
   },
 
@@ -316,7 +328,8 @@ export const translations = {
 
     // Hero
     heroHeadline: "Products delivered in minutes.",
-    heroSubtitleLine1: "Get everything delivered to your door in under 20 minutes.",
+    heroSubtitleLine1:
+      "Get everything delivered to your door in under 20 minutes.",
     heroSubtitleLine2: "Open 24/7",
 
     // CTA Labels
@@ -345,10 +358,9 @@ export const translations = {
     footerTagline: "Products delivered in minutes.",
     footerSections: "Sections",
     footerHome: "Home",
-    footerProducts: "Products",
-    footerBestSellers: "Best Sellers",
-    footerAbout: "About",
+    footerDeals: "Deals",
     footerOrderNow: "Order now",
+    footerAboutUs: "About us",
     footerRights: "All rights reserved.",
   },
 } as const;
