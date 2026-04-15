@@ -70,10 +70,10 @@ export interface Category {
 export const categories: Category[] = [
   {
     id: "beer-cider",
-    titlePT: "Cervejas & Sidra",
-    titleEN: "Beer & Cider",
-    subtitlePT: "As mais pedidas para o fim do dia",
-    subtitleEN: "Top picks for the end of the day",
+    titlePT: "Produtos do dia-a-dia",
+    titleEN: "Daily essentials",
+    subtitlePT: "Tudo o que precisas, quando precisas",
+    subtitleEN: "Everything you need, when you need it",
     image:
       "https://mgx-backend-cdn.metadl.com/generate/images/1075182/2026-04-07/0ed41f5a-9308-4005-ba07-9e82f82fd25f.png",
     href: "https://www.ubereats.com/pt-en/store/sortido-lisboa/dVKCqH2PUaqlcIaGdgbmxA/755282a8-7d8f-51aa-a570-86867606e6c4/4ac421bb-e462-49f0-96f3-3b5ee26ce102?ps=1&scats=4ac421bb-e462-49f0-96f3-3b5ee26ce102&scatsubs=",
@@ -81,10 +81,10 @@ export const categories: Category[] = [
   },
   {
     id: "soft-drinks-water",
-    titlePT: "Refrigerantes & Águas",
-    titleEN: "Soft Drinks & Water",
-    subtitlePT: "Sempre gelados, sempre prontos",
-    subtitleEN: "Always chilled, always ready",
+    titlePT: "Sempre frescos",
+    titleEN: "Always fresh",
+    subtitlePT: "Bebidas geladas, prontas a beber",
+    subtitleEN: "Always cold, always ready",
     image:
       "https://mgx-backend-cdn.metadl.com/generate/images/1075182/2026-04-07/d93db569-f48c-4c2a-a61d-d0ad66506d98.png",
     href: "https://www.ubereats.com/pt-en/store/sortido-lisboa/dVKCqH2PUaqlcIaGdgbmxA/755282a8-7d8f-51aa-a570-86867606e6c4/d6eb5b8d-ecfa-4147-b796-d3c2873dd834?ps=1&scats=d6eb5b8d-ecfa-4147-b796-d3c2873dd834&scatsubs=",
@@ -92,10 +92,10 @@ export const categories: Category[] = [
   },
   {
     id: "snacks-sweets",
-    titlePT: "Snacks & Doces",
-    titleEN: "Snacks & Sweets",
-    subtitlePT: "Para acompanhar qualquer pedido",
-    subtitleEN: "Perfect add-ons for any order",
+    titlePT: "Para matar o desejo",
+    titleEN: "To satisfy any cravings",
+    subtitlePT: "Snacks e doces para qualquer momento",
+    subtitleEN: "Snacks & sweets for any time of day",
     image:
       "https://mgx-backend-cdn.metadl.com/generate/images/1075182/2026-04-07/ffe1dd88-25b9-456d-b9fe-adc3157f81c9.png",
     href: "https://www.ubereats.com/pt-en/store/sortido-lisboa/dVKCqH2PUaqlcIaGdgbmxA?srsltid=AfmBOor-W3wTMUB9NiAxeQ5xW8g5WFShgXV5fb9f0sZT6UMu2gdE94ut",
@@ -281,7 +281,7 @@ export const translations = {
     ctaUberEats: "Uber Eats",
     ctaGlovo: "Glovo",
     categoriesTitle: "O que precisas agora?",
-    categoriesSubtitle: "Escolhe uma categoria e abre no Uber Eats",
+    categoriesSubtitle: "Escolhe e encomenda em segundos",
     bestSellersTitle: "Do “preciso disto” → à tua porta em minutos",
     bestSellersSubtitle: "Sem filas, sem carregar sacos",
     viewOn: "Ver no",
@@ -307,7 +307,7 @@ export const translations = {
     ctaUberEats: "Uber Eats",
     ctaGlovo: "Glovo",
     categoriesTitle: "What do you need right now?",
-    categoriesSubtitle: "Pick a category and open it on Uber Eats",
+    categoriesSubtitle: "Choose and order in seconds",
     bestSellersTitle: "From “I need it” → at your door in minutes",
     bestSellersSubtitle: "No queues, no heavy bags",
     viewOn: "View on",
