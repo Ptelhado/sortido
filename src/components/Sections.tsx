@@ -39,7 +39,7 @@ export function NewTopSection() {
   ];
 
   return (
-    <section className="w-full bg-[#FAFBFC] py-16 sm:py-24">
+    <section id="new-top-section" className="w-full bg-[#FAFBFC] py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="mb-10 text-center">
           <h2 className="text-3xl font-extrabold tracking-tight text-[#0A1628] sm:text-4xl">
@@ -96,7 +96,7 @@ export function CategoriesSection() {
   const { lang, t } = useLang();
 
   return (
-    <section className="w-full bg-white py-16 sm:py-24">
+    <section id="categories" className="w-full bg-white py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="mb-12 text-center">
           <h2 className="text-3xl font-extrabold tracking-tight text-[#0A1628] sm:text-4xl">
@@ -145,7 +145,7 @@ export function FeaturesSection() {
   const { lang, t } = useLang();
 
   return (
-    <section className="w-full bg-[#0A1628] py-16 text-white sm:py-24">
+    <section id="features" className="w-full bg-[#0A1628] py-16 text-white sm:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <h2 className="mb-12 text-center text-3xl font-extrabold tracking-tight sm:text-4xl">
           {t.featuresTitle}
@@ -185,42 +185,44 @@ export function FinalCtaSection() {
   const { t } = useLang();
 
   return (
-<section id="final-cta" className="w-full bg-[#FAFBFC] py-16 sm:py-24">
-  <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
-    <h2 className="text-3xl font-extrabold tracking-tight text-[#0A1628] sm:text-4xl">
-      {t.finalCtaHeadline}
-    </h2>
+    <section id="final-cta" className="w-full bg-[#FAFBFC] py-16 sm:py-24">
+      <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
+        <h2 className="text-3xl font-extrabold tracking-tight text-[#0A1628] sm:text-4xl">
+          {t.finalCtaHeadline}
+        </h2>
 
-    <p className="mt-4 text-base text-gray-500">{t.finalCtaSubtitle}</p>
+        <p className="mt-4 text-base text-gray-500">{t.finalCtaSubtitle}</p>
 
-    <div className="mt-10 flex flex-wrap items-center justify-center gap-6">
-      {heroPartnerCtas.map((partner) => {
-        const href =
-          partner.id === "bolt"
-            ? "https://food.bolt.eu/pt-pt/386-lisbon/p/186270-sortido/"
-            : partner.href;
+        <div className="mt-10 flex flex-wrap items-center justify-center gap-6">
+          {heroPartnerCtas.map((partner) => {
+            const href =
+              partner.id === "bolt"
+                ? "https://food.bolt.eu/pt-pt/386-lisbon/p/186270-sortido/"
+                : partner.href;
 
-        return (
-          <a
-            key={partner.id}
-            href={href || "#"}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={partner.alt}
-            className="transition-transform hover:scale-105"
-          >
-            <img
-              src={partner.logoSrc}
-              alt={partner.alt}
-              className={[
-                "h-14 w-auto object-contain",
-                partner.logoWidthClass ?? "",
-              ].join(" ")}
-              draggable={false}
-            />
-          </a>
-        );
-      })}
-    </div>
-  </div>
-</section>
+            return (
+              <a
+                key={partner.id}
+                href={href || "#"}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={partner.alt}
+                className="transition-transform hover:scale-105"
+              >
+                <img
+                  src={partner.logoSrc}
+                  alt={partner.alt}
+                  className={[
+                    "h-14 w-auto object-contain",
+                    partner.logoWidthClass ?? "",
+                  ].join(" ")}
+                  draggable={false}
+                />
+              </a>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
