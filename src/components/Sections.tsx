@@ -51,7 +51,7 @@ export function NewTopSection() {
 
             <div className="mt-6">
               <span className="inline-flex rounded-full bg-[#E63946] px-4 py-2 text-sm font-semibold text-white">
-                {lang === "pt" ? "Ver ofertas" : "View deals"}
+                {lang === "pt" ? "Big Deal" : "Big Deal"}
               </span>
             </div>
           </a>
@@ -77,7 +77,7 @@ export function NewTopSection() {
 
             <div className="mt-6">
               <span className="inline-flex rounded-full bg-[#E63946] px-4 py-2 text-sm font-semibold text-white">
-                {lang === "pt" ? "Aproveitar" : "Get it"}
+                {lang === "pt" ? "Glovo" : "Glovo"}
               </span>
             </div>
           </a>
@@ -103,7 +103,7 @@ export function NewTopSection() {
 
             <div className="mt-6">
               <span className="inline-flex rounded-full bg-[#E63946] px-4 py-2 text-sm font-semibold text-white">
-                {lang === "pt" ? "Pedir agora" : "Order now"}
+                {lang === "pt" ? "Bolt Food" : "Bolt Food"}
               </span>
             </div>
           </a>
