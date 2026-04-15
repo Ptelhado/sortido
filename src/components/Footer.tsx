@@ -21,8 +21,8 @@ export default function Footer() {
     },
     {
       label: t.footerOrderNow,
-      href: ctaLinks.order,
-      external: true,
+      href: "#final-cta",
+      external: false,
     },
     {
       label: t.footerAboutUs,
@@ -35,7 +35,6 @@ export default function Footer() {
     <footer className="w-full bg-[#0A1628] text-white">
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
-          {/* Brand Column */}
           <div className="sm:col-span-2 lg:col-span-1">
             <span className="text-2xl font-extrabold tracking-tight text-[#E63946]">
               Sortido
@@ -61,7 +60,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Sections Column */}
           <div>
             <h4 className="mb-4 text-sm font-bold uppercase tracking-wider text-white/40">
               {t.footerSections}
@@ -83,7 +81,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact + Hours Column */}
           <div>
             <h4 className="mb-4 text-sm font-bold uppercase tracking-wider text-white/40">
               {contact.title}
@@ -118,7 +115,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Address Column */}
           <div>
             <h4 className="mb-4 text-sm font-bold uppercase tracking-wider text-white/40">
               {address.title}
