@@ -71,35 +71,32 @@ export const categories: Category[] = [
   {
     id: "beer-cider",
     titlePT: "Produtos do dia-a-dia",
-    titleEN: "Daily essentials",
+    titleEN: "Everyday essentials",
     subtitlePT: "Tudo o que precisas, quando precisas",
     subtitleEN: "Everything you need, when you need it",
-    image:
-      "https://mgx-backend-cdn.metadl.com/generate/images/1075182/2026-04-07/0ed41f5a-9308-4005-ba07-9e82f82fd25f.png",
+    image: "/daily_products.png",
     href: "https://www.ubereats.com/pt-en/store/sortido-lisboa/dVKCqH2PUaqlcIaGdgbmxA/755282a8-7d8f-51aa-a570-86867606e6c4/4ac421bb-e462-49f0-96f3-3b5ee26ce102?ps=1&scats=4ac421bb-e462-49f0-96f3-3b5ee26ce102&scatsubs=",
-    uberCategory: "Cervejas e Sidra",
+    uberCategory: "Produtos do dia-a-dia",
   },
   {
     id: "soft-drinks-water",
     titlePT: "Sempre frescos",
     titleEN: "Always fresh",
     subtitlePT: "Bebidas geladas, prontas a beber",
-    subtitleEN: "Always cold, always ready",
-    image:
-      "https://mgx-backend-cdn.metadl.com/generate/images/1075182/2026-04-07/d93db569-f48c-4c2a-a61d-d0ad66506d98.png",
+    subtitleEN: "Chilled drinks, ready to enjoy",
+    image: "/always_fresh.png",
     href: "https://www.ubereats.com/pt-en/store/sortido-lisboa/dVKCqH2PUaqlcIaGdgbmxA/755282a8-7d8f-51aa-a570-86867606e6c4/d6eb5b8d-ecfa-4147-b796-d3c2873dd834?ps=1&scats=d6eb5b8d-ecfa-4147-b796-d3c2873dd834&scatsubs=",
-    uberCategory: "Refrigerantes & Águas",
+    uberCategory: "Sempre frescos",
   },
   {
     id: "snacks-sweets",
     titlePT: "Para matar o desejo",
-    titleEN: "To satisfy any cravings",
+    titleEN: "Cravings sorted",
     subtitlePT: "Snacks e doces para qualquer momento",
-    subtitleEN: "Snacks & sweets for any time of day",
-    image:
-      "https://mgx-backend-cdn.metadl.com/generate/images/1075182/2026-04-07/ffe1dd88-25b9-456d-b9fe-adc3157f81c9.png",
+    subtitleEN: "Snacks and sweets for any moment",
+    image: "/matar_o_desejo.png",
     href: "https://www.ubereats.com/pt-en/store/sortido-lisboa/dVKCqH2PUaqlcIaGdgbmxA?srsltid=AfmBOor-W3wTMUB9NiAxeQ5xW8g5WFShgXV5fb9f0sZT6UMu2gdE94ut",
-    uberCategory: "Snacks & Doces",
+    uberCategory: "Para matar o desejo",
   },
 ];
 
