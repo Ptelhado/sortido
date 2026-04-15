@@ -2,7 +2,7 @@ import { useLang } from "@/context/LanguageContext";
 import { heroImage, heroPartnerCtas } from "@/data/content";
 
 export default function Hero() {
-  const { t, lang } = useLang();
+  const { t } = useLang();
 
   return (
     <section id="hero" className="relative overflow-hidden bg-[#0A1628]">
@@ -30,17 +30,10 @@ export default function Hero() {
             {t.heroSubtitle}
           </p>
 
-          {/* Partner CTAs */}
+          {/* Partner Logos */}
           <div className="mx-auto mt-6 flex flex-wrap items-center justify-center gap-6">
             {heroPartnerCtas.map((partner) => {
-              const spacingClass =
-                partner.id === "uber-eats"
-                  ? "mr-[5px]"
-                  : partner.id === "bolt"
-                  ? "ml-[5px]"
-                  : "";
-
-              // Force Bolt to always have URL
+              // Force Bolt URL
               const href =
                 partner.id === "bolt"
                   ? "https://food.bolt.eu/pt-pt/386-lisbon/p/186270-sortido/"
@@ -53,9 +46,8 @@ export default function Hero() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={partner.alt}
-                  className={`group flex flex-col items-center ${spacingClass} outline-none`}
+                  className="group outline-none rounded-lg focus-visible:ring-2 focus-visible:ring-white/60"
                 >
-                  {/* Logo */}
                   <img
                     src={partner.logoSrc}
                     alt={partner.alt}
@@ -66,25 +58,11 @@ export default function Hero() {
                     ].join(" ")}
                     draggable={false}
                   />
-
-                  {/* CTA Label (NEW - improves CTR) */}
-                  <span className="mt-2 text-xs font-semibold tracking-wide text-white/90 opacity-80 group-hover:opacity-100">
-                    {lang === "pt"
-                      ? partner.id === "uber-eats"
-                        ? "Pedir no Uber"
-                        : partner.id === "glovo"
-                        ? "Abrir na Glovo"
-                        : "Pedir no Bolt"
-                      : partner.id === "uber-eats"
-                      ? "Order on Uber"
-                      : partner.id === "glovo"
-                      ? "Open in Glovo"
-                      : "Order on Bolt"}
-                  </span>
                 </a>
               );
             })}
           </div>
+
         </div>
       </div>
     </section>
