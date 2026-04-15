@@ -193,36 +193,35 @@ export function FinalCtaSection() {
 
         <p className="mt-4 text-base text-gray-500">{t.finalCtaSubtitle}</p>
 
-        <div className="mt-10 flex flex-wrap items-center justify-center gap-6">
-          {heroPartnerCtas.map((partner) => {
-            const href =
-              partner.id === "bolt"
-                ? "https://food.bolt.eu/pt-pt/386-lisbon/p/186270-sortido/"
-                : partner.href;
+      <div className="mt-10 flex flex-wrap items-center justify-center gap-6">
+  {heroPartnerCtas.map((partner) => {
+    const href =
+      partner.id === "bolt"
+        ? "https://food.bolt.eu/pt-pt/386-lisbon/p/186270-sortido/"
+        : partner.href;
 
-            return (
-              <a
-                key={partner.id}
-                href={href || "#"}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={partner.alt}
-                className="transition-transform hover:scale-105"
-              >
-                <img
-                  src={partner.logoSrc}
-                  alt={partner.alt}
-                  className={[
-                    "h-14 w-auto object-contain",
-                    partner.logoWidthClass ?? "",
-                  ].join(" ")}
-                  draggable={false}
-                />
-              </a>
-            );
-          })}
-        </div>
+    return (
+      <a
+        key={partner.id}
+        href={href || "#"}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={partner.alt}
+        className="transition-transform hover:scale-105"
+      >
+        <img
+          src={partner.logoSrc}
+          alt={partner.alt}
+          className={[
+            "h-14 w-auto object-contain",
+            partner.logoWidthClass ?? "",
+          ].join(" ")}
+          draggable={false}
+        />
+      </a>
+          );
+        })}
       </div>
-    </section>
+      </section>
   );
 }
