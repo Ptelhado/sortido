@@ -282,37 +282,29 @@ export const footerData = {
 // --- Translations ---
 export const translations = {
   pt: {
-    // Header
     headerCta: "Sobre nós",
 
-    // Hero
     heroHeadline: "Produtos entregues em minutos.",
     heroSubtitleLine1: "Recebe tudo à tua porta em menos de 20 minutos.",
     heroSubtitleLine2: "Aberto 24/7",
 
-    // CTA Labels
     ctaOrder: "Encomenda agora",
     ctaComingSoon: "Em breve",
     ctaUberEats: "Uber Eats",
     ctaGlovo: "Glovo",
 
-    // Categories
     categoriesTitle: "Precisas de algo agora?",
     categoriesSubtitle: "Escolhe e recebe em minutos",
 
-    // Best Sellers
     bestSellersTitle: "Do “preciso disto” → à tua porta em minutos",
     bestSellersSubtitle: "Sem filas, sem carregar sacos",
     viewOn: "Ver no",
 
-    // Features
     featuresTitle: "Porquê escolher a Sortido?",
 
-    // Final CTA
     finalCtaHeadline: "Pronto para encomendar?",
     finalCtaSubtitle: "Vê o que está disponível perto de ti.",
 
-    // Footer
     footerTagline: "Produtos entregues em minutos.",
     footerSections: "Secções",
     footerHome: "Início",
@@ -323,38 +315,30 @@ export const translations = {
   },
 
   en: {
-    // Header
     headerCta: "About us",
 
-    // Hero
     heroHeadline: "Products delivered in minutes.",
     heroSubtitleLine1:
       "Get everything delivered to your door in under 20 minutes.",
     heroSubtitleLine2: "Open 24/7",
 
-    // CTA Labels
     ctaOrder: "Order now",
     ctaComingSoon: "Coming soon",
     ctaUberEats: "Uber Eats",
     ctaGlovo: "Glovo",
 
-    // Categories
     categoriesTitle: "Do you need anything right now?",
     categoriesSubtitle: "Choose and receive in minutes",
 
-    // Best Sellers
     bestSellersTitle: "From “I need it” → at your door in minutes",
     bestSellersSubtitle: "No queues, no heavy bags",
     viewOn: "View on",
 
-    // Features
     featuresTitle: "Why choose Sortido?",
 
-    // Final CTA
     finalCtaHeadline: "Ready to order?",
     finalCtaSubtitle: "Check what’s available near you.",
 
-    // Footer
     footerTagline: "Products delivered in minutes.",
     footerSections: "Sections",
     footerHome: "Home",
