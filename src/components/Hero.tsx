@@ -26,13 +26,13 @@ export default function Hero() {
             {t.heroHeadline}
           </h1>
 
-          {/* 24/7 (emphasized) */}
-          <p className="mt-4 text-base font-bold tracking-wide text-white sm:text-lg">
+          {/* 24/7 (more breathing room) */}
+          <p className="mt-5 text-base font-bold tracking-wide text-white sm:text-lg">
             {t.heroSubtitleLine2}
           </p>
 
-          {/* Partner Logos */}
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-8">
+          {/* Icons (increased spacing from subtitle) */}
+          <div className="mt-12 flex flex-wrap items-center justify-center gap-8">
             {heroPartnerCtas.map((partner) => {
               const href =
                 partner.id === "bolt"
