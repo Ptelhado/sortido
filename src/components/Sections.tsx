@@ -47,6 +47,7 @@ export function NewTopSection() {
               ? "As melhores ofertas estão aqui — pede já"
               : "Best deals are live — order now"}
           </h2>
+
           <p className="mt-3 text-base text-gray-500">
             {lang === "pt"
               ? "Combos e preços especiais — disponíveis agora"
@@ -61,19 +62,32 @@ export function NewTopSection() {
               href={deal.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex min-h-[210px] flex-col justify-between rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
+              className="group flex min-h-[180px] flex-col justify-between rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-lg"
             >
               <div>
                 <h3 className="text-lg font-bold text-[#0A1628]">
                   {lang === "pt" ? deal.titlePT : deal.titleEN}
                 </h3>
+
                 <p className="mt-2 text-sm leading-relaxed text-gray-500">
                   {lang === "pt" ? deal.subtitlePT : deal.subtitleEN}
                 </p>
               </div>
 
-              <div className="mt-6">
-                <span className="inline-flex rounded-full bg-[#E63946] px-4 py-2 text-sm font-semibold text-white transition-colors group-hover:bg-[#d62839]">
+              <div className="mt-4">
+                <span
+                  className={[
+                    "inline-flex rounded-full px-4 py-2 text-sm font-semibold transition-all duration-200",
+                    deal.id === "uber" && "bg-black text-white",
+                    deal.id === "glovo" && "bg-[#FFD600] text-black",
+                    deal.id === "bolt" && "bg-[#14ce74] text-black",
+                    deal.id === "uber" && "group-hover:opacity-90",
+                    deal.id === "glovo" && "group-hover:brightness-95",
+                    deal.id === "bolt" && "group-hover:brightness-95",
+                  ]
+                    .filter(Boolean)
+                    .join(" ")}
+                >
                   {lang === "pt" ? deal.badgePT : deal.badgeEN}
                 </span>
               </div>
@@ -102,6 +116,7 @@ export function CategoriesSection() {
           <h2 className="text-3xl font-extrabold tracking-tight text-[#0A1628] sm:text-4xl">
             {t.categoriesTitle}
           </h2>
+
           <p className="mt-3 text-base text-gray-500">{t.categoriesSubtitle}</p>
         </div>
 
@@ -112,7 +127,7 @@ export function CategoriesSection() {
               href={cat.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:-translate-y-1 hover:shadow-xl"
+              className="group relative overflow-hidden rounded-2xl bg-white shadow-md transition-all duration-200 hover:-translate-y-1 hover:shadow-xl"
             >
               <div className="aspect-[4/3] overflow-hidden">
                 <img
@@ -128,6 +143,7 @@ export function CategoriesSection() {
                 <h3 className="text-xl font-bold text-white">
                   {lang === "pt" ? cat.titlePT : cat.titleEN}
                 </h3>
+
                 <p className="mt-1 text-sm text-white/80">
                   {lang === "pt" ? cat.subtitlePT : cat.subtitleEN}
                 </p>
@@ -155,7 +171,7 @@ export function FeaturesSection() {
           {features.map((feat) => (
             <div
               key={feat.id}
-              className="rounded-2xl border border-white/10 bg-white/5 p-6 transition-all hover:border-white/20 hover:bg-white/10"
+              className="rounded-2xl border border-white/10 bg-white/5 p-6 transition-all duration-200 hover:border-white/20 hover:bg-white/10"
             >
               <span className="mb-4 block text-3xl">{feat.icon}</span>
 
@@ -207,7 +223,7 @@ export function FinalCtaSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={partner.alt}
-                className="transition-transform hover:scale-105"
+                className="transition-transform duration-200 hover:scale-105"
               >
                 <img
                   src={partner.logoSrc}
