@@ -9,8 +9,8 @@ export function NewTopSection() {
     {
       id: "uber",
       href: "https://www.ubereats.com/pt-en/store/sortido-lisboa/dVKCqH2PUaqlcIaGdgbmxA/755282a8-7d8f-51aa-a570-86867606e6c4/e04d6e55-3e0e-5b8a-9ebd-03ffee9017c0?ps=1&scats=e04d6e55-3e0e-5b8a-9ebd-03ffee9017c0&scatsubs=",
-      titlePT: "🔥 Ofertas Uber Eats",
-      titleEN: "🔥 Uber Eats Deals ",
+      titlePT: "🔥 Uber Eats",
+      titleEN: "🔥 Uber Eats",
       subtitlePT: "Descontos ativos — poupa agora",
       subtitleEN: "Active discounts — save now",
       badgePT: "Big Deal",
@@ -19,8 +19,8 @@ export function NewTopSection() {
     {
       id: "glovo",
       href: "https://glovoapp.com/pt/pt/lisboa/stores/sortido-lis?content=combos-sc.52490173%2Fagua-sumos-e-refrigerantes-c.52490170",
-      titlePT: "💸 Combos Glovo",
-      titleEN: "💸 Combos Glovo",
+      titlePT: "💸 Glovo",
+      titleEN: "💸 Glovo",
       subtitlePT: "Packs com desconto — aproveita agora",
       subtitleEN: "Discounted bundles — grab them now",
       badgePT: "Ver ofertas",
@@ -29,8 +29,8 @@ export function NewTopSection() {
     {
       id: "bolt",
       href: "https://food.bolt.eu/pt-pt/386-lisbon/p/186270-sortido/",
-      titlePT: "⚡ Ofertas Bolt Food",
-      titleEN: "⚡ Bolt Food deals",
+      titlePT: "⚡ Bolt Food",
+      titleEN: "⚡ Bolt Food",
       subtitlePT: "Promoções disponíveis agora",
       subtitleEN: "Promotions available now",
       badgePT: "Ver bundles",
