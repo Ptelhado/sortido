@@ -8,7 +8,7 @@ export function NewTopSection() {
   const deals = [
     {
       id: "uber",
-      href: "https://www.ubereats.com/pt-en/store/sortido-lisboa/dVKCqH2PUaqlcIaGdgbmxA/755282a8-7d8f-51aa-a570-86867606e6c4/e04d6e55-3e0e-5b8a-9ebd-03ffee9017c0?ps=1&scats=e04d6e55-3e0e-5b8a-9ebd-03ffee9017c0&scatsubs=",
+      href: "https://www.ubereats.com/pt/store/big-deal-sortidao-lisboa/hR29vQM3VJWafpWzcNkwxg?srsltid=AfmBOorcm9b4Xp1tFnI2XfNbjm3ERGbnwCAEFiAZ4PnKSuJMSDe9cY6s",
       titlePT: "🔥 Uber Eats",
       titleEN: "🔥 Uber Eats",
       subtitlePT: "Descontos ativos — poupa agora",
@@ -28,7 +28,7 @@ export function NewTopSection() {
     },
     {
       id: "bolt",
-      href: "https://food.bolt.eu/pt-pt/386-lisbon/p/186270-sortido/",
+      href: "https://food.bolt.eu/pt-pt/386-lisbon/p/186270/smc/4785074667088466/?categoryName=Combos&backPath=%2Fp%2F186270",
       titlePT: "⚡ Bolt Food",
       titleEN: "⚡ Bolt Food",
       subtitlePT: "Promoções disponíveis agora",
