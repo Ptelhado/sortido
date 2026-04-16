@@ -49,8 +49,8 @@ export function NewTopSection() {
           </h2>
           <p className="mt-3 text-base text-gray-500">
             {lang === "pt"
-              ? "Combos e preços especiais disponíveis agora — entrega rápida"
-              : "Exclusive combos and deals live now — fast delivery"}
+              ? "Combos e preços especiais — disponíveis agora"
+              : "Exclusive combos and deals — live now"}
           </p>
         </div>
 
