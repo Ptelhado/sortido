@@ -62,7 +62,7 @@ export function NewTopSection() {
               href={deal.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex min-h-[180px] flex-col justify-between rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-lg"
+              className="group flex min-h-[180px] cursor-pointer flex-col justify-between rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-lg"
             >
               <div>
                 <h3 className="text-lg font-bold text-[#0A1628]">
@@ -77,7 +77,7 @@ export function NewTopSection() {
               <div className="mt-4">
                 <span
                   className={[
-                    "inline-flex rounded-full px-4 py-2 text-sm font-semibold transition-all duration-200",
+                    "inline-flex items-center justify-center rounded-full px-4 py-2 text-sm font-semibold transition-all duration-200",
                     deal.id === "uber" && "bg-black text-white",
                     deal.id === "glovo" && "bg-[#FFD600] text-black",
                     deal.id === "bolt" && "bg-[#14ce74] text-black",
@@ -186,7 +186,7 @@ export function FeaturesSection() {
           ))}
         </div>
 
-        <p className="mt-10 text-center text-base font-semibold text-white/80 sm:text-lg">
+        <p className="mt-8 text-center text-base font-semibold text-white/80 sm:text-lg">
           {lang === "pt"
             ? "Fresco e rápido a qualquer hora"
             : "Fresh and fast, any time"}
