@@ -20,11 +20,6 @@ export default function Footer() {
       external: false,
     },
     {
-      label: t.footerOrderNow,
-      href: "#final-cta",
-      external: false,
-    },
-    {
       label: t.footerAboutUs,
       href: ctaLinks.about,
       external: true,
