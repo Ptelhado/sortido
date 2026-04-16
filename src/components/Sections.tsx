@@ -186,7 +186,7 @@ export function FeaturesSection() {
           ))}
         </div>
 
-        <p className="mt-14 text-center text-base font-semibold text-white/80 sm:text-lg">
+        <p className="mt-18 text-center text-base font-semibold text-white/80 sm:text-lg">
           {lang === "pt"
             ? "Fresco e rápido a qualquer hora"
             : "Fresh and fast, any time"}
