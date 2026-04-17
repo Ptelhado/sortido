@@ -250,22 +250,22 @@ export const footerData = {
   contactPT: {
     title: "Contacto",
     phone: "+351 912 345 678",
-    email: "info@sortido.pt",
+    email: "geral@planetasortido.pt",
   },
   contactEN: {
     title: "Contact",
     phone: "+351 912 345 678",
-    email: "info@sortido.pt",
+    email: "geral@planetasortido.pt",
   },
   addressPT: {
     title: "Morada",
-    line1: "Rua da Conveniência, 42",
-    line2: "1200-100 Lisboa, Portugal",
+    line1: "R. Camilo Castelo Branco 17",
+    line2: "1150-084 Lisboa, Portugal",
   },
   addressEN: {
     title: "Address",
-    line1: "Rua da Conveniência, 42",
-    line2: "1200-100 Lisbon, Portugal",
+    line1: "R. Camilo Castelo Branco 17",
+    line2: "1150-084 Lisboa, Portugal",
   },
   hoursPT: {
     title: "Horário",
