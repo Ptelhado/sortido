@@ -269,12 +269,12 @@ export const footerData = {
   },
   hoursPT: {
     title: "Horário",
-    line1: "Aberto 24h.",
+    line1: "Aberto 24h",
     line2: "7 dias por semana",
   },
   hoursEN: {
     title: "Hours",
-    line1: "Open 24h.",
+    line1: "Open 24h",
     line2: "7 days a week",
   },
 };
