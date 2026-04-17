@@ -259,12 +259,12 @@ export const footerData = {
   },
   addressPT: {
     title: "Morada",
-    line1: "R. Camilo Castelo Branco 17",
+    line1: "R. Camilo Castelo Branco, 17",
     line2: "1150-084 Lisboa, Portugal",
   },
   addressEN: {
     title: "Address",
-    line1: "R. Camilo Castelo Branco 17",
+    line1: "R. Camilo Castelo Branco, 17",
     line2: "1150-084 Lisboa, Portugal",
   },
   hoursPT: {
