@@ -13,7 +13,7 @@ export default function Header() {
           <img
             src="/sortido_logo.png"
             alt="Sortido logo"
-            className="h-20 w-auto"
+            className="h-[60px] w-auto"
           />
         </a>
 
