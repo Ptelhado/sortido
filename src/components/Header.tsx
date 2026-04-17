@@ -7,20 +7,15 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-[#FF0000] text-white shadow-sm shadow-slate-900/10">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-0 sm:px-6">
-        
-        {/* Logo */}
-        <a href="#" className="flex items-center gap-2">
+        <a href="#" className="flex items-center -ml-2.5">
           <img
             src="/sortido_logo.png"
             alt="Sortido logo"
-            className="h-28 w-auto"
+            className="h-20 w-auto"
           />
         </a>
 
-        {/* Right side */}
         <div className="flex items-center gap-3">
-          
-          {/* Language Toggle */}
           <button
             onClick={toggleLang}
             className="flex items-center gap-1 rounded-full border border-white/20 bg-white/10 px-3 py-1.5 text-sm font-semibold text-white transition-colors hover:bg-white/20"
@@ -35,7 +30,6 @@ export default function Header() {
             </span>
           </button>
 
-          {/* Sobre nós (Google Maps link) */}
           <a
             href={ctaLinks.about}
             target="_blank"
@@ -44,7 +38,6 @@ export default function Header() {
           >
             {t.headerCta}
           </a>
-
         </div>
       </div>
     </header>
