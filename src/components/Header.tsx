@@ -11,7 +11,7 @@ export default function Header() {
         {/* Logo */}
         <a href="#" className="flex items-center gap-2">
           <img
-            src="/sortido_logo.svg"
+            src="/sortido_logo.png"
             alt="Sortido logo"
             className="h-28 w-auto"
           />
