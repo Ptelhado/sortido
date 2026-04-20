@@ -101,7 +101,7 @@ export default function LegalPage() {
                       ao abrigo do artigo 37.º do RGPD, dado que o tratamento de
                       dados não constitui a sua atividade principal, não envolve
                       tratamento em larga escala de categorias especiais de dados
-                      nem monitorização sistemática em larga escala. :contentReference[oaicite:2]{index=2}
+                      nem monitorização sistemática em larga escala.
                     </p>
                   </div>
                 </div>
@@ -115,9 +115,7 @@ export default function LegalPage() {
                   Dependendo da sua interação com o nosso sítio web e serviços,
                   poderão ser tratados dados de identificação, contacto, dados
                   transacionais, referências de pagamento, dados técnicos e de
-                  navegação, bem como preferências e comunicações. A tabela da
-                  página 1 do documento resume estas categorias e indica em que
-                  momentos são recolhidas. :contentReference[oaicite:3]{index=3}
+                  navegação, bem como preferências e comunicações.
                 </p>
 
                 <div className="mt-5 overflow-x-auto rounded-2xl border border-[#0A1628]/10 bg-white">
@@ -198,7 +196,7 @@ export default function LegalPage() {
                     <strong>Não tratamos categorias especiais de dados.</strong>{" "}
                     O Planeta Sortido não recolhe nem trata dados de saúde,
                     biométricos, genéticos, origem racial ou étnica, convicções
-                    religiosas, opiniões políticas, vida ou orientação sexual. :contentReference[oaicite:4]{index=4}
+                    religiosas, opiniões políticas, vida ou orientação sexual.
                   </p>
                 </div>
               </div>
@@ -212,7 +210,7 @@ export default function LegalPage() {
                   cumprimento de obrigações fiscais, contabilísticas e legais, a
                   prevenção de fraude e segurança do sítio web, bem como a
                   análise de navegação e melhoria do sítio web com base em
-                  consentimento para cookies não essenciais. :contentReference[oaicite:5]{index=5}
+                  consentimento para cookies não essenciais.
                 </p>
 
                 <div className="mt-5 overflow-x-auto rounded-2xl border border-[#0A1628]/10 bg-white">
@@ -277,7 +275,7 @@ export default function LegalPage() {
                   do Espaço Económico Europeu, as transferências serão efetuadas
                   com base em mecanismos adequados, incluindo decisões de
                   adequação, cláusulas contratuais-tipo ou outras garantias
-                  previstas no Capítulo V do RGPD. :contentReference[oaicite:6]{index=6}
+                  previstas no Capítulo V do RGPD.
                 </p>
               </div>
 
@@ -297,7 +295,7 @@ export default function LegalPage() {
                   >
                     geral@planetasortido.pt
                   </a>
-                  . :contentReference[oaicite:7]{index=7}
+                  .
                 </p>
 
                 <div className="mt-5 grid gap-4 sm:grid-cols-2">
@@ -326,7 +324,7 @@ export default function LegalPage() {
                 <p className="mt-5 text-sm leading-7 text-[#0A1628]/80">
                   Responderemos ao pedido no prazo máximo de 30 dias, podendo
                   esse prazo ser prorrogado por mais 60 dias em casos de
-                  especial complexidade, com informação prévia ao titular. :contentReference[oaicite:8]{index=8}
+                  especial complexidade, com informação prévia ao titular.
                 </p>
               </div>
 
@@ -339,7 +337,7 @@ export default function LegalPage() {
                   ou judicial, o titular tem o direito de apresentar reclamação
                   à Comissão Nacional de Proteção de Dados (CNPD), autoridade de
                   controlo competente em Portugal, caso considere que o
-                  tratamento dos seus dados viola o RGPD. :contentReference[oaicite:9]{index=9}
+                  tratamento dos seus dados viola o RGPD.
                 </p>
               </div>
 
@@ -352,7 +350,7 @@ export default function LegalPage() {
                   proteger os dados pessoais contra destruição, perda, alteração,
                   divulgação não autorizada ou acesso indevido, incluindo
                   transmissão cifrada (TLS/SSL), controlo de acessos e registos
-                  de auditoria. :contentReference[oaicite:10]{index=10}
+                  de auditoria.
                 </p>
               </div>
 
@@ -362,7 +360,7 @@ export default function LegalPage() {
                   Os nossos serviços não se destinam a menores de 16 anos. Não
                   recolhemos intencionalmente dados pessoais de menores e, caso
                   tal ocorra inadvertidamente, os dados serão apagados logo que
-                  a situação seja identificada. :contentReference[oaicite:11]{index=11}
+                  a situação seja identificada.
                 </p>
               </div>
 
@@ -373,7 +371,7 @@ export default function LegalPage() {
                 <p className="mt-3 text-sm leading-7 text-[#0A1628]/80">
                   Esta política pode ser atualizada periodicamente para refletir
                   alterações nos procedimentos internos ou na legislação
-                  aplicável. A versão atualizada será publicada nesta página. :contentReference[oaicite:12]{index=12}
+                  aplicável. A versão atualizada será publicada nesta página.
                 </p>
               </div>
             </div>
@@ -391,7 +389,7 @@ export default function LegalPage() {
                   ações e preferências durante um determinado período. Os
                   cookies não estritamente necessários apenas podem ser
                   instalados com consentimento prévio, livre, específico,
-                  informado e inequívoco. :contentReference[oaicite:13]{index=13}
+                  informado e inequívoco.
                 </p>
               </div>
 
@@ -451,11 +449,6 @@ export default function LegalPage() {
                     </tbody>
                   </table>
                 </div>
-
-                <p className="mt-4 text-sm leading-7 text-[#0A1628]/80">
-                  A tabela de categorias, finalidades, prazos e necessidade de
-                  consentimento consta das páginas 4 e 5 do documento. :contentReference[oaicite:14]{index=14}
-                </p>
               </div>
 
               <div>
@@ -464,7 +457,7 @@ export default function LegalPage() {
                   O sítio pode incorporar funcionalidades de terceiros, como
                   botões de redes sociais, vídeos ou mapas, que podem instalar
                   os seus próprios cookies. Esses cookies regem-se pelas
-                  políticas de privacidade das respetivas entidades. :contentReference[oaicite:15]{index=15}
+                  políticas de privacidade das respetivas entidades.
                 </p>
               </div>
 
@@ -477,16 +470,15 @@ export default function LegalPage() {
                   configuração disponível no sítio, quando aplicável, ou através
                   das definições do browser. A desativação de cookies
                   estritamente necessários pode afetar o correto funcionamento
-                  do sítio. :contentReference[oaicite:16]{index=16}
+                  do sítio.
                 </p>
 
                 <div className="mt-4 rounded-2xl border border-[#0A1628]/10 bg-[#0A1628]/[0.03] p-5">
                   <p className="text-sm leading-7 text-[#0A1628]/80">
                     Ao aceder ao sítio web pela primeira vez, é apresentado um
-                    banner de consentimento de cookies, em conformidade com as
-                    Diretrizes do EDPB 05/2020 sobre o consentimento. O
-                    consentimento é registado e pode ser retirado a qualquer
-                    momento com a mesma facilidade com que foi concedido. :contentReference[oaicite:17]{index=17}
+                    banner de consentimento de cookies. O consentimento é
+                    registado e pode ser retirado a qualquer momento com a mesma
+                    facilidade com que foi concedido.
                   </p>
                 </div>
               </div>
@@ -501,14 +493,14 @@ export default function LegalPage() {
                 Nos termos do Decreto-Lei n.º 156/2005, com as alterações
                 introduzidas pelo Decreto-Lei n.º 74/2017 e demais legislação
                 complementar, o Planeta Sortido disponibiliza acesso ao Livro de
-                Reclamações Eletrónico. :contentReference[oaicite:18]{index=18}
+                Reclamações Eletrónico.
               </p>
 
               <p>
                 O Livro de Reclamações Eletrónico é gerido pelo Portal do
                 Consumidor, sendo as reclamações transmitidas às entidades
                 reguladoras competentes para apreciação e eventual instauração
-                de procedimento. :contentReference[oaicite:19]{index=19}
+                de procedimento.
               </p>
 
               <p>
@@ -532,7 +524,7 @@ export default function LegalPage() {
                 >
                   geral@planetasortido.pt
                 </a>
-                . :contentReference[oaicite:20]{index=20}
+                .
               </p>
             </div>
           </section>
@@ -546,7 +538,7 @@ export default function LegalPage() {
               <p>
                 Nos termos do artigo 18.º da Lei n.º 144/2015 e da Diretiva
                 2013/11/UE, em caso de litígio de consumo, o consumidor pode
-                recorrer a entidades de resolução alternativa de litígios. :contentReference[oaicite:21]{index=21}
+                recorrer a entidades de resolução alternativa de litígios.
               </p>
 
               <ul className="list-disc space-y-2 pl-6">
@@ -569,7 +561,7 @@ export default function LegalPage() {
                 O Planeta Sortido declara disponibilidade para submeter
                 eventuais litígios de consumo às entidades de RAL identificadas,
                 sem prejuízo do direito do consumidor de recorrer aos tribunais
-                competentes. :contentReference[oaicite:22]{index=22}
+                competentes.
               </p>
             </div>
           </section>
@@ -578,10 +570,7 @@ export default function LegalPage() {
             <p className="text-sm leading-7 text-[#0A1628]/75">
               <strong>Planeta Sortido, Unipessoal Lda</strong> · NIF 518 655
               253 · Av. Infante D. Henrique, n.º 333 H, Escritório 17, 1800-282
-              Lisboa · Capital Social: 1.000,00 EUR. Documento elaborado em
-              conformidade com o Reg. (UE) 2016/679 (RGPD), Lei n.º 58/2019,
-              Diretiva 2002/58/CE, Lei n.º 41/2004 e DL n.º 156/2005, na sua
-              atual redação. :contentReference[oaicite:23]{index=23}
+              Lisboa · Capital Social: 1.000,00 EUR.
             </p>
           </footer>
         </div>
