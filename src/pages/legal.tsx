@@ -268,7 +268,7 @@ export default function LegalPage() {
 
               <div>
                 <h3 className="text-lg font-semibold">
-                  1.5 Transferências para Países Terceiros
+                  1.4 Transferências para Países Terceiros
                 </h3>
                 <p className="mt-3 text-sm leading-7 text-[#0A1628]/80">
                   Sempre que recorramos a prestadores de serviços situados fora
@@ -281,7 +281,7 @@ export default function LegalPage() {
 
               <div>
                 <h3 className="text-lg font-semibold">
-                  1.6 Direitos dos Titulares dos Dados
+                  1.5 Direitos dos Titulares dos Dados
                 </h3>
                 <p className="mt-3 text-sm leading-7 text-[#0A1628]/80">
                   Nos termos do RGPD e da Lei n.º 58/2019, dispõe dos direitos
@@ -330,7 +330,7 @@ export default function LegalPage() {
 
               <div>
                 <h3 className="text-lg font-semibold">
-                  1.7 Direito de Reclamação à Autoridade de Controlo
+                  1.6 Direito de Reclamação à Autoridade de Controlo
                 </h3>
                 <p className="mt-3 text-sm leading-7 text-[#0A1628]/80">
                   Sem prejuízo de qualquer outra via de recurso administrativo
@@ -343,7 +343,7 @@ export default function LegalPage() {
 
               <div>
                 <h3 className="text-lg font-semibold">
-                  1.8 Segurança dos Dados
+                  1.7 Segurança dos Dados
                 </h3>
                 <p className="mt-3 text-sm leading-7 text-[#0A1628]/80">
                   Implementamos medidas técnicas e organizativas adequadas para
@@ -355,7 +355,7 @@ export default function LegalPage() {
               </div>
 
               <div>
-                <h3 className="text-lg font-semibold">1.9 Menores de Idade</h3>
+                <h3 className="text-lg font-semibold">1.8 Menores de Idade</h3>
                 <p className="mt-3 text-sm leading-7 text-[#0A1628]/80">
                   Os nossos serviços não se destinam a menores de 16 anos. Não
                   recolhemos intencionalmente dados pessoais de menores e, caso
@@ -366,7 +366,7 @@ export default function LegalPage() {
 
               <div>
                 <h3 className="text-lg font-semibold">
-                  1.10 Alterações à Política de Privacidade
+                  1.9 Alterações à Política de Privacidade
                 </h3>
                 <p className="mt-3 text-sm leading-7 text-[#0A1628]/80">
                   Esta política pode ser atualizada periodicamente para refletir
