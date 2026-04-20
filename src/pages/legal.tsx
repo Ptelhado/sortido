@@ -570,7 +570,7 @@ export default function LegalPage() {
             <p className="text-sm leading-7 text-[#0A1628]/75">
               <strong>Planeta Sortido, Unipessoal Lda</strong> · NIF 518 655
               253 · Av. Infante D. Henrique, n.º 333 H, Escritório 17, 1800-282
-              Lisboa · Capital Social: 1.000,00 EUR.
+              Lisboa
             </p>
           </footer>
         </div>
