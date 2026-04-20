@@ -26,27 +26,26 @@ export default function Footer() {
     },
   ];
 
+  const legalPageHref = "/legal";
+
   const legalLinks = [
     {
       label: lang === "pt" ? "Termos & Condições" : "Terms & Conditions",
-      href: "/termos",
+      href: legalPageHref,
       external: false,
     },
     {
       label: lang === "pt" ? "Política de Privacidade" : "Privacy Policy",
-      href: "/privacidade",
+      href: legalPageHref,
       external: false,
     },
     {
       label: lang === "pt" ? "Política de Cookies" : "Cookie Policy",
-      href: "/cookies",
+      href: legalPageHref,
       external: false,
     },
     {
-      label:
-        lang === "pt"
-          ? "Livro de Reclamações"
-          : "Complaints Book",
+      label: lang === "pt" ? "Livro de Reclamações" : "Complaints Book",
       href: "https://www.livroreclamacoes.pt/",
       external: true,
     },
