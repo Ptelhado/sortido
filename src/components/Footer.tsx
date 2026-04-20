@@ -26,6 +26,32 @@ export default function Footer() {
     },
   ];
 
+  const legalLinks = [
+    {
+      label: lang === "pt" ? "Termos & Condições" : "Terms & Conditions",
+      href: "/termos",
+      external: false,
+    },
+    {
+      label: lang === "pt" ? "Política de Privacidade" : "Privacy Policy",
+      href: "/privacidade",
+      external: false,
+    },
+    {
+      label: lang === "pt" ? "Política de Cookies" : "Cookie Policy",
+      href: "/cookies",
+      external: false,
+    },
+    {
+      label:
+        lang === "pt"
+          ? "Livro de Reclamações"
+          : "Complaints Book",
+      href: "https://www.livroreclamacoes.pt/",
+      external: true,
+    },
+  ];
+
   return (
     <footer className="w-full bg-[#0A1628] text-white">
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
@@ -35,7 +61,7 @@ export default function Footer() {
               Sortido
             </span>
 
-            <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/50">
+            <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/60">
               {t.footerTagline}
             </p>
           </div>
@@ -108,10 +134,29 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-14 border-t border-white/10 pt-6 text-center">
-          <p className="text-xs text-white/30">
-            © {new Date().getFullYear()} Sortido. {t.footerRights}
-          </p>
+        <div className="mt-14 border-t border-white/10 pt-6">
+          <div className="flex flex-col items-center justify-between gap-4 text-center md:flex-row md:text-left">
+            <p className="text-xs text-white/35">
+              © {new Date().getFullYear()} Sortido. {t.footerRights}
+            </p>
+
+            <nav
+              aria-label={lang === "pt" ? "Ligações legais" : "Legal links"}
+              className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2"
+            >
+              {legalLinks.map((item) => (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  target={item.external ? "_blank" : undefined}
+                  rel={item.external ? "noopener noreferrer" : undefined}
+                  className="text-xs text-white/45 underline underline-offset-4 transition-colors hover:text-white"
+                >
+                  {item.label}
+                </a>
+              ))}
+            </nav>
+          </div>
         </div>
       </div>
     </footer>
