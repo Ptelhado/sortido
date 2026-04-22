@@ -249,12 +249,12 @@ export const socialLinks: SocialLink[] = [
 export const footerData = {
   contactPT: {
     title: "Contacto",
-    phone: "+351 912 345 678",
+    phone: "+351 914 785 142",
     email: "geral@planetasortido.pt",
   },
   contactEN: {
     title: "Contact",
-    phone: "+351 912 345 678",
+    phone: "+351 914 785 142",
     email: "geral@planetasortido.pt",
   },
   addressPT: {
